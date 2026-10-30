@@ -4,7 +4,7 @@
     "variants": [
       { "prompt": "Put the steps of primary hemostasis in order.", "answer": ["Vascular spasm", "Platelet adhesion", "Platelet activation", "Platelet aggregation"], "explanation": "The vessel clamps down first, then platelets stick (adhesion), switch on (activation), and clump together (aggregation) into a plug." },
       { "prompt": "A cut just happened. Order what happens first to last in primary hemostasis.", "answer": ["Vessel constricts", "Platelets stick to vWF on exposed collagen", "Platelets activate and release granules", "Platelets clump via GPIIb/IIIa and fibrinogen"], "explanation": "Vasoconstriction, then adhesion, then activation, then aggregation." },
-      { "prompt": "Order these platelet events from first to last.", "answer": ["Adhesion (GPIb grabs vWF)", "Activation (shape change, granule release)", "Aggregation (GPIIb/IIIa cross-links via fibrinogen)", "Temporary platelet plug"], "explanation": "Platelets must stick before they activate, and must activate before GPIIb/IIIa can grip fibrinogen. The result is a temporary plug." }
+      { "prompt": "Order these platelet events from first to last.", "answer": ["Vascular spasm (vessel constricts)", "Adhesion (GPIb grabs vWF)", "Activation (shape change, granule release)", "Aggregation (GPIIb/IIIa cross-links via fibrinogen)"], "explanation": "The vessel constricts first. Platelets must stick before they activate, and must activate before GPIIb/IIIa can grip fibrinogen." }
     ]
   },
   {
@@ -52,7 +52,7 @@
     "variants": [
       { "prompt": "Name the dense-granule chemical that helps keep the vessel constricted.", "answer": "serotonin", "accepted": ["serotonin", "5-HT", "5HT"], "explanation": "Serotonin released from dense granules helps maintain vasoconstriction." },
       { "prompt": "Name the dense-granule molecule that activates nearby platelets through P2Y12.", "answer": "ADP", "accepted": ["ADP", "adenosine diphosphate"], "explanation": "ADP from dense granules binds P2Y12 on nearby platelets." },
-      { "prompt": "Name the alpha-granule protein that bridges GPIIb/IIIa receptors on two platelets.", "answer": "fibrinogen", "accepted": ["fibrinogen", "factor I", "factor 1", "FI"], "explanation": "Fibrinogen from alpha granules links GPIIb/IIIa receptors on different platelets." }
+      { "prompt": "Alpha granules release a protein that also bridges GPIIb/IIIa receptors on two platelets. Name it.", "answer": "fibrinogen", "accepted": ["fibrinogen", "factor I", "factor 1", "FI"], "explanation": "Fibrinogen links GPIIb/IIIa receptors on different platelets; alpha granules are one source of it." }
     ]
   },
   {
@@ -60,13 +60,13 @@
     "variants": [
       { "prompt": "A classmate says platelets are sticky all the time and clump anywhere in a vessel. What is the correction?", "answer": "Intact endothelium keeps platelets inactive (partly by releasing prostacyclin); they activate only at a break", "distractors": ["Correct: platelets clump everywhere but are cleared quickly", "Platelets only stick inside the heart", "Platelets can't stick until fibrin forms"], "explanation": "Healthy endothelium actively prevents platelet activation. Platelets switch on when they meet exposed collagen and activating signals at a break." },
       { "prompt": "Why don't circulating platelets form plugs in healthy vessels?", "answer": "The intact lining releases prostacyclin and lacks activating signals, so platelets stay inactive", "distractors": ["Platelets have no receptors until they are 7 days old", "Fibrinogen is absent from normal blood", "Thromboxane A2 constantly dissolves them"], "explanation": "Prostacyclin from intact endothelium inhibits aggregation; activators like exposed collagen are absent." },
-      { "prompt": "Which statement about platelets in an uninjured vessel is TRUE?", "answer": "They circulate inactive because the endothelium actively holds them off", "distractors": ["They are constantly forming tiny plugs that dissolve", "They stick to the wall but don't aggregate", "They are stored in the spleen until injury"], "explanation": "Intact endothelium keeps platelets inactive; injury flips that." }
+      { "prompt": "Which statement about platelets in an uninjured vessel is TRUE?", "answer": "They circulate inactive because the endothelium actively holds them off", "distractors": ["They are constantly forming tiny plugs that dissolve", "They stick to the wall but don't aggregate", "They are permanently glued to the vessel wall"], "explanation": "Intact endothelium keeps platelets inactive; injury flips that." }
     ]
   },
   {
     "id": "m1-q09", "goal": "m1-g04", "type": "mc", "source_node": "prostacyclin", "claims": ["c-pgi2-1"],
     "variants": [
-      { "prompt": "Prostacyclin and thromboxane A2 pull in opposite directions. What does prostacyclin do?", "answer": "Inhibits platelet aggregation and dilates vessels", "distractors": ["Promotes aggregation and constricts vessels", "Activates GPIb", "Converts fibrinogen to fibrin"], "explanation": "Prostacyclin: anti-aggregation and vasodilation. TXA2: pro-aggregation and vasoconstriction. Their balance sets plug size." },
+      { "prompt": "Prostacyclin and thromboxane A2 pull in opposite directions. What does prostacyclin do to platelets?", "answer": "Keeps them from activating and aggregating", "distractors": ["Activates them and makes them aggregate", "Activates GPIb", "Converts fibrinogen to fibrin"], "explanation": "Prostacyclin holds platelets back; TXA2 pushes them to aggregate. Their balance sets plug size." },
       { "prompt": "The size of the platelet plug depends on the balance between prostacyclin and what?", "answer": "Thromboxane A2", "distractors": ["Serotonin", "Endothelin", "Factor VIII"], "explanation": "Prostacyclin vs TXA2 sets how much plug forms." },
       { "prompt": "Which is released by intact endothelium and keeps platelets quiet?", "answer": "Prostacyclin (PGI2)", "distractors": ["Thromboxane A2", "ADP", "vWF"], "explanation": "Prostacyclin from intact endothelium inhibits aggregation." }
     ]
@@ -74,16 +74,16 @@
   {
     "id": "m1-q10", "goal": "m1-g05", "type": "order", "source_node": "vwf", "claims": ["c-vwf-1", "c-col-1", "c-gpib-1"],
     "variants": [
-      { "prompt": "Order the adhesion chain from the vessel wall to the platelet.", "answer": ["Exposed collagen", "vWF", "GPIb", "Platelet"], "explanation": "vWF binds collagen; the platelet's GPIb binds vWF." },
+      { "prompt": "Order the adhesion chain from the vessel wall to the platelet.", "answer": ["Exposed collagen", "vWF", "GPIb receptor on the platelet"], "explanation": "vWF binds collagen; the platelet's GPIb receptor binds vWF." },
       { "prompt": "Order the events of platelet adhesion.", "answer": ["Endothelium is damaged", "Collagen is exposed", "vWF binds the collagen", "Platelet GPIb binds vWF and the platelet activates"], "explanation": "Injury exposes collagen, vWF anchors to it, and platelets grab vWF through GPIb." },
       { "prompt": "Order from what gets exposed first to what the platelet does last in adhesion.", "answer": ["Subendothelial collagen exposed", "vWF anchors to collagen", "GPIb grips vWF", "Platelet changes shape and releases granules"], "explanation": "GPIb binding activates the platelet, which then releases its granules." }
     ]
   },
   {
-    "id": "m1-q11", "goal": "m1-g05", "type": "mc", "source_node": "vwf", "claims": ["c-vwf-3", "c-vwf-4"],
+    "id": "m1-q11", "goal": "m1-g05", "type": "mc", "source_node": "vwf", "claims": ["c-vwf-1", "c-col-1"],
     "variants": [
-      { "prompt": "Besides helping platelets stick, what is vWF's second main job?", "answer": "Carrying and protecting factor VIII", "distractors": ["Making thromboxane A2", "Dissolving clots", "Producing platelets"], "explanation": "vWF stabilizes factor VIII, so it isn't cleared quickly." },
-      { "prompt": "vWF's grip on GPIb works best in which flow condition?", "answer": "Fast-flowing, high-shear blood such as in arteries", "distractors": ["Completely still blood", "Only in veins", "Only after fibrin forms"], "explanation": "Shear stretches vWF open, exposing its GPIb binding site; in still conditions vWF and GPIb don't bind." },
+      { "prompt": "On the vessel-wall side, what does vWF attach to?", "answer": "Exposed collagen under the damaged endothelium", "distractors": ["Red blood cells", "Fibrin strands", "Intact endothelium"], "explanation": "Injury exposes subendothelial collagen; vWF anchors to it." },
+      { "prompt": "On the platelet side, what does vWF attach to?", "answer": "The platelet's GPIb receptor", "distractors": ["The platelet's P2Y12 receptor", "The platelet's COX-1 enzyme", "The platelet's dense granules"], "explanation": "Platelets grab vWF with GPIb." },
       { "prompt": "Why is vWF called the anchor of the platelet plug?", "answer": "It binds exposed collagen on one side and platelet GPIb on the other", "distractors": ["It cross-links fibrin strands", "It binds GPIIb/IIIa on two platelets at once", "It anchors red cells to the wall"], "explanation": "vWF bridges the wall (collagen) to the platelet (GPIb)." }
     ]
   },
@@ -98,16 +98,16 @@
   {
     "id": "m1-q13", "goal": "m1-g06", "type": "fill", "source_node": "cox1", "claims": ["c-cox-1"],
     "variants": [
-      { "prompt": "Name the platelet enzyme that starts making thromboxane A2 from arachidonic acid.", "answer": "COX-1", "accepted": ["COX-1", "COX1", "COX 1", "cyclooxygenase-1", "cyclooxygenase 1", "cyclooxygenase"], "explanation": "COX-1 is always present in platelets and begins the TXA2 pathway." },
-      { "prompt": "Platelets turn arachidonic acid toward thromboxane A2 using which enzyme?", "answer": "COX-1", "accepted": ["COX-1", "COX1", "COX 1", "cyclooxygenase-1", "cyclooxygenase 1", "cyclooxygenase"], "explanation": "COX-1 (then thromboxane synthase) makes TXA2." },
-      { "prompt": "Which enzyme does aspirin block in platelets?", "answer": "COX-1", "accepted": ["COX-1", "COX1", "COX 1", "cyclooxygenase-1", "cyclooxygenase 1", "cyclooxygenase"], "explanation": "Aspirin irreversibly blocks COX-1, so platelets can't make TXA2." }
+      { "prompt": "Name the platelet enzyme that starts making thromboxane A2.", "answer": "COX-1", "accepted": ["COX-1", "COX1", "COX 1", "cyclooxygenase-1", "cyclooxygenase 1", "cyclooxygenase"], "explanation": "COX-1 is always present in platelets and begins the TXA2 pathway." },
+      { "prompt": "Aspirin aside: which enzyme do platelets need to make thromboxane A2? (abbreviation is fine)", "answer": "COX-1", "accepted": ["COX-1", "COX1", "COX 1", "cyclooxygenase-1", "cyclooxygenase 1", "cyclooxygenase"], "explanation": "COX-1 (then thromboxane synthase) makes TXA2." },
+      { "prompt": "Thromboxane A2 is one of the two signals platelets use to recruit more platelets. Which platelet enzyme is needed to make it?", "answer": "COX-1", "accepted": ["COX-1", "COX1", "COX 1", "cyclooxygenase-1", "cyclooxygenase 1", "cyclooxygenase"], "explanation": "Without COX-1, no TXA2, and the TXA2 recruitment loop stops." }
     ]
   },
   {
     "id": "m1-q14", "goal": "m1-g07", "type": "mc", "source_node": "gp2b3a", "claims": ["c-gp2-1", "c-gp2-2", "c-fgn-1"],
     "variants": [
       { "prompt": "How does fibrinogen join two platelets in the plug?", "answer": "It binds GPIIb/IIIa receptors on both platelets, bridging them", "distractors": ["It binds GPIb on both platelets", "It is cut into fibrin inside the platelet", "It glues platelets to collagen"], "explanation": "Fibrinogen links GPIIb/IIIa receptors on different platelets." },
-      { "prompt": "When can GPIIb/IIIa grip fibrinogen?", "answer": "Only after the platelet has been activated", "distractors": ["Always, even on resting platelets", "Only after fibrin has formed", "Only when vWF is absent"], "explanation": "GPIIb/IIIa needs activation (inside-out signaling) before it binds." },
+      { "prompt": "When can GPIIb/IIIa grip fibrinogen?", "answer": "Only after the platelet has been activated", "distractors": ["Always, even on resting platelets", "Only after fibrin has formed", "Only when vWF is absent"], "explanation": "GPIIb/IIIa has to be switched on by the activated platelet before it can bind." },
       { "prompt": "Which comes first at a wound?", "answer": "GPIb adhesion to vWF, then GPIIb/IIIa aggregation", "distractors": ["GPIIb/IIIa aggregation, then GPIb adhesion", "Both happen only after fibrin forms", "GPIIb/IIIa adhesion, then GPIb aggregation"], "explanation": "Adhesion first (GPIb–vWF), aggregation second (GPIIb/IIIa–fibrinogen)." }
     ]
   },
@@ -132,7 +132,7 @@
     "variants": [
       { "prompt": "The platelet plug is later reinforced by a protein mesh called ____.", "answer": "fibrin", "accepted": ["fibrin", "fibrin mesh"], "explanation": "Fibrin from the coagulation cascade reinforces the platelet plug." },
       { "prompt": "Primary hemostasis makes a platelet plug. What is the stage that reinforces it called?", "answer": "secondary hemostasis", "accepted": ["secondary hemostasis", "secondary haemostasis", "coagulation", "coagulation cascade", "the coagulation cascade"], "explanation": "Secondary hemostasis (the coagulation cascade) reinforces the plug." },
-      { "prompt": "True or false (type it): the platelet plug alone is a durable, final clot.", "answer": "false", "accepted": ["false", "f", "no"], "explanation": "False. The platelet plug is temporary; fibrin makes it durable." }
+      { "prompt": "The platelet plug buys time. Time for what protein mesh to form? (one word)", "answer": "fibrin", "accepted": ["fibrin", "fibrin mesh"], "explanation": "The temporary plug holds until fibrin from the coagulation cascade reinforces it." }
     ]
   },
   {
@@ -144,19 +144,19 @@
     ]
   },
   {
-    "id": "m1-q19", "goal": "m1-g09", "type": "fill", "source_node": "platelet-count", "claims": ["c-pc-1"],
+    "id": "m1-q19", "goal": "m1-g12", "type": "fill", "source_node": "platelet-count", "claims": ["c-pc-1"],
     "variants": [
-      { "prompt": "Thrombocytopenia is a platelet count below ____ per µL.", "answer": "150,000", "accepted": ["150000", "150,000", "150k", "150 000", "150 thousand"], "explanation": "Below 150,000/µL is thrombocytopenia." },
-      { "prompt": "What is the lower limit of a normal adult platelet count (per µL)?", "answer": "150,000", "accepted": ["150000", "150,000", "150k", "150 000", "150 thousand"], "explanation": "Normal starts at 150,000/µL." },
-      { "prompt": "A count under 150,000/µL is called ____.", "answer": "thrombocytopenia", "accepted": ["thrombocytopenia", "low platelets", "thrombocytopaenia"], "explanation": "Thrombocytopenia means a low platelet count." }
+      { "prompt": "Thrombocytopenia is a platelet count below ____ per microliter.", "answer": "150,000", "accepted": ["150000", "150,000", "150k", "150 000", "150 thousand", "150"], "explanation": "Below 150,000 per microliter is thrombocytopenia." },
+      { "prompt": "What is the lower limit of a normal adult platelet count (per microliter)? Lab sheets may print it in thousands.", "answer": "150,000", "accepted": ["150000", "150,000", "150k", "150 000", "150 thousand", "150"], "explanation": "Normal starts at 150,000 per microliter (often printed as 150)." },
+      { "prompt": "A count under 150,000 per microliter is called ____.", "answer": "thrombocytopenia", "accepted": ["thrombocytopenia", "low platelets", "thrombocytopaenia"], "explanation": "Thrombocytopenia means a low platelet count." }
     ]
   },
   {
     "id": "m1-q20", "goal": "m1-g10", "type": "scenario", "source_node": "aspirin", "claims": ["c-asa-1", "c-asa-2", "c-cox-2"],
     "variants": [
-      { "prompt": "A 70-year-old took a single 325 mg aspirin 3 days ago and now has a laceration that keeps oozing. Is aspirin still affecting her platelets, and why?", "answer": "Yes: aspirin permanently blocked COX-1 in the platelets she had, and they can't make new COX-1, so the effect lasts until they're replaced (7–10 days)", "distractors": ["No: aspirin's effect ends when the drug leaves the blood, within hours", "No: aspirin affects only fibrin, not platelets", "Yes, but only because aspirin lowers the platelet count"], "explanation": "Aspirin's antiplatelet effect lasts the platelet's lifespan, not the drug's time in the blood." },
-      { "prompt": "A patient asks why he must stop aspirin a week before surgery when it 'only lasts a few hours.' What's the physiology?", "answer": "Aspirin irreversibly blocks platelet COX-1, and platelets can't make new enzyme, so blocked platelets stay blocked for their 7–10 day life", "distractors": ["Aspirin is stored in fat and slowly released", "Aspirin destroys the bone marrow for a week", "Aspirin permanently lowers fibrinogen"], "explanation": "Irreversible block plus no new COX-1 means the effect lasts until new platelets arrive." },
-      { "prompt": "On aspirin, which step of primary hemostasis is weakened?", "answer": "Thromboxane A2 production, so platelet activation and aggregation are reduced", "distractors": ["vWF binding to collagen", "GPIb adhesion", "Vascular spasm from endothelin"], "explanation": "Aspirin blocks COX-1, so platelets make no TXA2; the TXA2 feedback loop is lost." }
+      { "prompt": "A 70-year-old took a single 325 mg aspirin 3 days ago and now has a laceration that keeps oozing. Is aspirin still affecting her platelets, and why?", "answer": "Yes: the platelets she had that day are permanently blocked and can't make new COX-1; function returns gradually as new platelets replace them over 7–10 days", "distractors": ["No: aspirin's effect ends when the drug leaves the blood, within hours", "No: aspirin affects only fibrin, not platelets", "Yes, but only because aspirin lowers the platelet count"], "explanation": "Aspirin's antiplatelet effect follows the platelet's lifespan, not the drug's time in the blood. Recovery is gradual as new platelets arrive." },
+      { "prompt": "A patient says aspirin 'only lasts a few hours,' so a dose yesterday can't matter for his bleeding today. What's the physiology?", "answer": "Aspirin irreversibly blocks platelet COX-1, and platelets can't make new enzyme, so blocked platelets stay blocked for their 7–10 day life", "distractors": ["Aspirin is stored in fat and slowly released", "Aspirin destroys the bone marrow for a week", "Aspirin permanently lowers fibrinogen"], "explanation": "Irreversible block plus no new COX-1 means the effect lasts until new platelets arrive." },
+      { "prompt": "On aspirin, which step of primary hemostasis is weakened?", "answer": "Thromboxane A2 production, so platelet activation and aggregation are reduced", "distractors": ["vWF binding to collagen", "GPIb adhesion", "Vascular spasm from endothelin"], "explanation": "Aspirin blocks COX-1, so platelets make little TXA2; the TXA2 feedback loop is lost." }
     ]
   },
   {
@@ -171,7 +171,7 @@
     "id": "m1-q22", "goal": "m1-g11", "type": "scenario", "source_node": "clopidogrel", "claims": ["c-clop-1", "c-p2y12-1", "c-tica-1"],
     "variants": [
       { "prompt": "A patient's med list says Plavix after a stent. Which step of primary hemostasis is blocked?", "answer": "ADP's signal through P2Y12, so GPIIb/IIIa isn't switched on and platelets aggregate less", "distractors": ["COX-1, so no thromboxane A2", "vWF binding to collagen", "Fibrinogen production in the liver"], "explanation": "Plavix is clopidogrel: an irreversible P2Y12 blocker." },
-      { "prompt": "A patient takes Brilinta. How does it differ from Plavix at the platelet?", "answer": "Both block P2Y12, but Brilinta (ticagrelor) blocks it reversibly while Plavix (clopidogrel) blocks it irreversibly", "distractors": ["Brilinta blocks COX-1 instead", "Brilinta blocks GPIb instead", "There is no difference"], "explanation": "Ticagrelor is a reversible P2Y12 blocker; clopidogrel and prasugrel are irreversible." },
+      { "prompt": "A patient takes Brilinta. How does it differ from Plavix at the platelet?", "answer": "Both block P2Y12, but Brilinta (ticagrelor) blocks it reversibly while Plavix (clopidogrel) blocks it irreversibly", "distractors": ["Brilinta blocks COX-1 instead", "Brilinta blocks GPIb instead", "There is no difference"], "explanation": "Ticagrelor is a reversible P2Y12 blocker; clopidogrel and prasugrel are irreversible. Reversible does not mean short-acting: ticagrelor's effect still lasts several days after the last dose." },
       { "prompt": "A patient on Effient has a bleeding cut. Which receptor is affected, and is the block permanent for those platelets?", "answer": "P2Y12; yes, prasugrel's block is irreversible for the life of the platelet", "distractors": ["GPIIb/IIIa; no, it wears off in minutes", "COX-1; yes, like aspirin", "GPIb; no, it is reversible"], "explanation": "Effient is prasugrel: irreversible P2Y12 block lasting the platelet's life." }
     ]
   },
@@ -180,23 +180,23 @@
     "variants": [
       { "prompt": "Clopidogrel, prasugrel, and ticagrelor all block which platelet receptor?", "answer": "P2Y12", "accepted": ["P2Y12", "P2Y 12", "P2Y-12", "ADP receptor", "P2Y12 receptor"], "explanation": "All three are P2Y12 (ADP receptor) blockers." },
       { "prompt": "Which of the three P2Y12 blockers binds reversibly? (generic or brand)", "answer": "ticagrelor", "accepted": ["ticagrelor", "Brilinta"], "explanation": "Ticagrelor (Brilinta) is reversible; clopidogrel and prasugrel are irreversible." },
-      { "prompt": "Plavix is the brand name of which drug?", "answer": "clopidogrel", "accepted": ["clopidogrel"], "explanation": "Plavix = clopidogrel." }
+      { "prompt": "A med list says Plavix. Type the platelet receptor it blocks.", "answer": "P2Y12", "accepted": ["P2Y12", "P2Y 12", "P2Y-12", "ADP receptor", "P2Y12 receptor"], "explanation": "Plavix is clopidogrel, an irreversible P2Y12 blocker." }
     ]
   },
   {
     "id": "m1-q24", "goal": "m1-g12", "type": "scenario", "source_node": "platelet-count", "claims": ["c-pc-2", "c-plug-2", "c-plug-1"],
     "variants": [
-      { "prompt": "Case: a patient with a platelet count of 8,000/µL cuts a finger. What do you expect at the cut, and why?", "answer": "Prolonged oozing, because too few platelets are available to build the temporary plug", "distractors": ["Normal bleeding, because fibrin alone stops small cuts instantly", "A larger-than-normal clot, because low counts speed clotting", "No bleeding, because the vessel spasm lasts for days"], "explanation": "Primary hemostasis needs enough platelets to form the plug; very low counts bleed and can even bleed spontaneously." },
-      { "prompt": "Case: a patient with severe thrombocytopenia has tiny red dots on the legs and bleeding gums. What do these point to?", "answer": "A platelet (primary hemostasis) problem: skin and mucosal bleeding such as petechiae", "distractors": ["A clotting-factor problem causing joint bleeds", "Normal findings with low platelets", "A blood vessel spasm problem"], "explanation": "Petechiae, purpura, and mucosal bleeding are the classic pattern of platelet problems." },
-      { "prompt": "Case: two patients have platelet counts of 130,000 and 9,000/µL. Which is more likely to bleed spontaneously?", "answer": "The patient at 9,000/µL", "distractors": ["The patient at 130,000/µL", "Both equally", "Neither: platelet count doesn't affect bleeding"], "explanation": "Mild drops (100,000–150,000) are usually asymptomatic; very low counts (below about 10,000–20,000) can bleed spontaneously." }
+      { "prompt": "Case: a patient with a platelet count of 8,000 per microliter cuts a finger. What do you expect at the cut, and why?", "answer": "Prolonged oozing, because too few platelets are available to build the temporary plug", "distractors": ["Normal bleeding, because fibrin alone stops small cuts instantly", "A larger-than-normal clot, because low counts speed clotting", "No bleeding, because the vessel spasm lasts for days"], "explanation": "Primary hemostasis needs enough platelets to form the plug; very low counts bleed and can even bleed spontaneously." },
+      { "prompt": "Case: a patient with severe thrombocytopenia has tiny red dots on the legs and bleeding gums. What do these point to?", "answer": "A platelet (primary hemostasis) problem: skin and mucosal bleeding such as petechiae", "distractors": ["A clotting-factor problem causing joint bleeds", "An allergic skin rash", "A blood vessel spasm problem"], "explanation": "Petechiae, purpura, and mucosal bleeding are the classic pattern of platelet problems." },
+      { "prompt": "Case: two patients have platelet counts of 130,000 and 9,000 per microliter. Which is more likely to bleed spontaneously?", "answer": "The patient at 9,000", "distractors": ["The patient at 130,000", "Both equally", "Neither: platelet count doesn't affect bleeding"], "explanation": "Mild drops (100,000–150,000) are usually asymptomatic; very low counts (below about 10,000–20,000) can bleed spontaneously." }
     ]
   },
   {
     "id": "m1-q25", "goal": "m1-g13", "type": "scenario", "source_node": "vwd", "claims": ["c-vwd-1", "c-vwf-1", "c-pc-3"],
     "variants": [
-      { "prompt": "Case: a teen with a family history of heavy nosebleeds has a normal platelet count but very low vWF. Which step fails at a cut?", "answer": "Adhesion: platelets can't anchor to the exposed collagen without vWF", "distractors": ["Aggregation, because GPIIb/IIIa is missing", "Vascular spasm, because endothelin is missing", "None: a normal count means normal clotting"], "explanation": "No vWF means GPIb has nothing to grab, so adhesion fails." },
+      { "prompt": "Case: a teen with a family history of heavy nosebleeds has a normal platelet count but very low vWF. Which step fails at a cut?", "answer": "Adhesion: with too little vWF, platelets can't anchor well to the exposed collagen", "distractors": ["Aggregation, because GPIIb/IIIa is missing", "Vascular spasm, because endothelin is missing", "None: a normal count means normal clotting"], "explanation": "Little vWF means GPIb has little to grab, so adhesion is weak." },
       { "prompt": "Case: a patient with von Willebrand disease bleeds a long time after a dental extraction. Why, at the platelet level?", "answer": "Too little working vWF, so platelets can't adhere well to the wound", "distractors": ["Too few platelets are made", "Platelets lack COX-1", "The vessel can't constrict"], "explanation": "vWD impairs adhesion; the platelet count is typically normal." },
-      { "prompt": "Case: a patient with severe vWD also has a low factor VIII level. Why?", "answer": "vWF normally carries and protects factor VIII; without it, factor VIII is cleared quickly", "distractors": ["Low platelets make less factor VIII", "Aspirin destroys factor VIII", "Factor VIII is made inside alpha granules only"], "explanation": "vWF stabilizes factor VIII; without vWF, factor VIII falls, which is why some vWD resembles hemophilia A." }
+      { "prompt": "Case: a patient with vWD has a normal platelet count. Which step at a cut is impaired?", "answer": "Platelet adhesion to the wound", "distractors": ["Platelet production in the bone marrow", "Thromboxane A2 production", "Vascular spasm"], "explanation": "Count is normal; the platelets just can't grip the wound well without enough working vWF." }
     ]
   },
   {
@@ -208,11 +208,11 @@
     ]
   },
   {
-    "id": "m1-q27", "goal": "m1-g14", "type": "order", "source_node": "gp2b3a", "claims": ["c-gp2-2", "c-adp-1", "c-fgn-1"],
+    "id": "m1-q27", "goal": "m1-g07", "type": "order", "source_node": "gp2b3a", "claims": ["c-gp2-2", "c-adp-1", "c-fgn-1"],
     "variants": [
       { "prompt": "Order the aggregation chain.", "answer": ["ADP released from dense granules", "ADP binds P2Y12", "GPIIb/IIIa is switched on", "Fibrinogen bridges platelets"], "explanation": "ADP → P2Y12 → GPIIb/IIIa activation → fibrinogen bridging." },
       { "prompt": "Order these receptor events at a wound.", "answer": ["GPIb binds vWF", "Platelet activates", "GPIIb/IIIa becomes active", "GPIIb/IIIa binds fibrinogen"], "explanation": "Adhesion via GPIb comes first; activation then turns on GPIIb/IIIa, which binds fibrinogen." },
-      { "prompt": "Order from first to last.", "answer": ["Adhesion", "Activation", "GPIIb/IIIa activation", "Aggregation into a plug"], "explanation": "Stick, switch on, turn on the aggregation receptor, clump." }
+      { "prompt": "Order from first to last.", "answer": ["Adhesion to the wound", "Platelet activation", "Fibrinogen bridges GPIIb/IIIa on neighboring platelets", "Temporary platelet plug"], "explanation": "Stick, switch on, cross-link through fibrinogen, plug." }
     ]
   }
 ]

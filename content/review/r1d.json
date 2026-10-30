@@ -1,0 +1,7 @@
+[
+  {
+    "item": "g-cf-1",
+    "verdict": "style",
+    "detail": "Citation problem resolved: 'calcium is factor IV' is now supported by two independent sources (StatPearls sp-clotting-factors: 'Clotting factor IV is a calcium ion...'; OpenStax table row IV / Calcium ions / Inorganic ions in plasma, confirmed in content/sources/openstax-hemostasis.txt lines 64-66). Remaining parts (mostly liver-made, activate more factors, VIII as cofactor) are also supported. No factual error. Wording needs a fix only: (1) definition 'plus one non-protein: calcium (factor IV) that work in the coagulation cascade' misattaches 'that work' to calcium and the colon breaks the sentence; suggest 'Clotting factors are substances in the blood that work together in the coagulation cascade. Most are proteins made by the liver; one, calcium (factor IV), is not a protein. They are numbered with Roman numerals; factor VIII is one of the helper (cofactor) proteins.' (2) claim text 'most are made in the liver; that activate one another' has a stray semicolon/fragment; suggest 'Clotting factors are proteins, except calcium (factor IV); most are made in the liver, they activate one another in coagulation, and factor VIII is a cofactor.' Approve once reworded."
+  }
+]

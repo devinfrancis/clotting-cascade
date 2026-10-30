@@ -1,0 +1,32 @@
+[
+  {
+    "item": "c-txa2-1",
+    "verdict": "approve",
+    "detail": "Claim (platelet makes TXA2; it activates neighbors, which make more) is correct and no longer implies granule storage. sp-txa2 passage supports the full positive-feedback loop; sp-platelet-activation independently supports that TXA2 is produced by the platelet (via cyclooxygenase) and promotes aggregation. Two sources, both supportive. Minor note only: the 'which make more' part rests on sp-txa2 alone, which is acceptable since the second source corroborates synthesis by the platelet."
+  },
+  {
+    "item": "g-act-1",
+    "verdict": "approve",
+    "detail": "Claim (shape change, granule release, aggregation) is correct. sp-txa2 passage supports all three elements explicitly; sp-platelet-activation passage independently supports activation with release of granule contents. Bad sp-hemostasis passage is gone."
+  },
+  {
+    "item": "g-zym-1",
+    "verdict": "approve",
+    "detail": "Correct: II, VII, IX, X, XI, XII are serine-protease zymogens; V and VIII are cofactors (not enzymes); XIII is activated to an enzyme (a transglutaminase) that is not a serine protease. sp-coag-pathways list passage supports the serine-protease set and the V/VIII/XIII exclusion; sp-hemostasis 'catalyzed by activated factor XIII' supports XIIIa being an enzyme; sp-hemostasis IXa/VIIIa passage supports VIII as cofactor; sp-clotting-factors supports zymogen-to-enzyme notation. Optional nicety (not required): V and VIII also circulate inactive and are activated (Va, VIIIa), so they are 'procofactors' rather than zymogens; the why_here already handles this adequately for the level."
+  },
+  {
+    "item": "g-cf-1",
+    "verdict": "citation_problem",
+    "detail": "The claim is factually correct (calcium, factor IV, is the only non-protein numbered factor), but none of the three cited passages supports the new parenthetical: none mentions calcium, factor IV, or a non-protein factor, and sp-hemostasis 'majority of the proteins that function as clotting factors' is about where the proteins are made, not whether all factors are proteins. No passage anywhere in m1 states calcium = factor IV. Add a source passage naming calcium as factor IV (e.g. from sp-clotting-factors or openstax-hemostasis's factor table) or drop the parenthetical. Style also: 'mostly proteins (calcium ... is the exception)' is internally awkward; if calcium is the single exception, say 'proteins, except calcium (factor IV)'. The glossary definition 'mostly blood proteins (mostly made by the liver; calcium is the exception)' reads as if calcium is the exception to liver production; reword the same way."
+  },
+  {
+    "item": "e4",
+    "verdict": "approve",
+    "detail": "'binding helps activate the platelet' is accurate: GPIb-vWF binding tethers platelets and contributes to activation signaling without overstating it as the sole activator."
+  },
+  {
+    "item": "g-ca-1",
+    "verdict": "approve",
+    "detail": "Simplified block now cites the pmc-vitk-cycle Gla-domain/calcium/membrane passage and the sp-clotting-factors gamma-carboxylation passage; both support the fuller_truth. The out-of-context '10 to 12 Gla residues' passage is gone. Main claim remains supported."
+  }
+]

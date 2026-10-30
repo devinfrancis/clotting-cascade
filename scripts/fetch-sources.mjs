@@ -25,7 +25,7 @@ mkdirSync('content/sources', { recursive: true });
 for (const s of index) {
   if (want.length && !want.includes(s.id)) continue;
   try {
-    const res = await fetch(s.url, { headers: { 'User-Agent': 'Mozilla/5.0 (study-app source fetch)' }, redirect: 'follow' });
+    const res = await fetch(s.fetch_url || s.url, { headers: { 'User-Agent': 'Mozilla/5.0 (study-app source fetch)' }, redirect: 'follow' });
     const text = htmlToText(await res.text());
     writeFileSync(`content/sources/${s.id}.txt`, `URL: ${s.url}\nFETCHED: ${new Date().toISOString()}\nSTATUS: ${res.status}\n\n${text}\n`);
     console.log(s.id, res.status, text.length);

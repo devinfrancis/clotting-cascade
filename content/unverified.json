@@ -1,0 +1,20 @@
+[
+  { "term": "serotonin", "aliases": ["5-HT"], "definition": "A signaling chemical stored in platelet dense granules; at a wound it helps keep the vessel narrowed." },
+  { "term": "arachidonic acid", "aliases": [], "definition": "A fat that is part of cell membranes. Enzymes like COX-1 turn it into signaling molecules such as thromboxane A2." },
+  { "term": "Weibel-Palade bodies", "aliases": ["Weibel-Palade body", "WPB", "WPBs"], "definition": "Storage packets inside the cells lining blood vessels; they hold von Willebrand factor until it is needed." },
+  { "term": "CYP2C19", "aliases": ["CYP enzymes", "CYP3A4"], "definition": "A liver enzyme that processes many drugs. It converts clopidogrel into its active form; some people's version works poorly." },
+  { "term": "shear", "aliases": ["shear stress", "high shear"], "definition": "The dragging force of blood flowing past a surface; it is strongest in fast-flowing arteries." },
+  { "term": "Bernard-Soulier syndrome", "aliases": [], "definition": "A rare inherited platelet disorder in which platelets lack working GPIb, so they cannot stick properly to von Willebrand factor." },
+  { "term": "Glanzmann thrombasthenia", "aliases": [], "definition": "A rare inherited platelet disorder in which platelets lack GPIIb/IIIa, so they cannot clump together." },
+  { "term": "epistaxis", "aliases": [], "definition": "The medical word for a nosebleed." },
+  { "term": "vasoconstriction", "aliases": ["vasoconstrictor", "constrict"], "definition": "Narrowing of a blood vessel when the muscle in its wall tightens." },
+  { "term": "vasodilation", "aliases": ["vasodilator", "dilate"], "definition": "Widening of a blood vessel when the muscle in its wall relaxes." },
+  { "term": "phospholipid", "aliases": ["phospholipids", "phosphatidylserine"], "definition": "The main fat molecule that makes up cell membranes. On activated platelets, some of it faces outward and gives clotting factors a place to gather." },
+  { "term": "hemophilia A", "aliases": ["hemophilia"], "definition": "An inherited bleeding disorder caused by too little factor VIII; bleeding tends to go deep, into joints and muscles." },
+  { "term": "P2Y1", "aliases": [], "definition": "A second ADP receptor on platelets, alongside P2Y12. The antiplatelet drugs in this module block P2Y12, not P2Y1." },
+  { "term": "dual antiplatelet therapy", "aliases": ["DAPT"], "definition": "Taking aspirin plus a P2Y12 blocker (such as clopidogrel) together, often after a heart attack or a coronary stent." },
+  { "term": "half-life", "aliases": ["half life"], "definition": "The time it takes for the amount of a drug in the blood to drop by half. For irreversible antiplatelet drugs, the effect lasts much longer than the drug's half-life." },
+  { "term": "inside-out signaling", "aliases": [], "definition": "Signals from inside an activated platelet that switch its GPIIb/IIIa receptor into the shape that can grab fibrinogen." },
+  { "term": "ristocetin", "aliases": [], "definition": "A lab reagent that makes von Willebrand factor bind platelets; used in tests for von Willebrand disease." },
+  { "term": "bleeding time", "aliases": [], "definition": "An older test that measures how long a small standard cut takes to stop bleeding; it reflects platelet function." }
+]

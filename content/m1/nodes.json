@@ -28,11 +28,12 @@
       {
         "id": "c-endo-2",
         "kind": "physiology",
-        "text": "When the vessel lining is broken, platelets meet collagen, ADP, thrombin, and thromboxane A2, and these trigger platelet activation.",
-        "card_front": "What do platelets encounter at a break in the endothelium that triggers their activation?",
+        "text": "At a break in the vessel lining, platelets meet exposed collagen and activating signals (such as ADP, thrombin, and thromboxane A2, which come from other platelets and the clotting process, not from the wall itself). These trigger platelet activation.",
+        "card_front": "What do platelets meet at a break in the endothelium that triggers their activation?",
         "sources": [
           { "ref": "sp-txa2", "passage": "However, when a platelet encounters a break in the endothelium, it encounters molecules such as collagen, ADP, thrombin, and TxA2 that trigger its activation." },
-          { "ref": "openstax-hemostasis", "passage": "In the second step, platelets, which normally float free in the plasma, encounter the area of vessel rupture with the exposed underlying connective tissue and collagenous fibers. The platelets begin to clump together, become spiked and sticky, and bind to the exposed collagen and endothelial lining." }
+          { "ref": "openstax-ap-vessels", "passage": "Damage to this endothelial lining and exposure of blood to the collagenous fibers beneath is one of the primary causes of clot formation." },
+          { "ref": "sp-platelet-activation", "passage": "As platelets continue to degranulate and their activation continues along a positive feedback loop, adenosine diphosphate (ADP) released from dense granules binds to P2Y1 and P2Y12 receptors located on the platelet’s membrane, inducing the expression of the GPIIb/IIIa receptor." }
         ]
       }
     ]
@@ -46,17 +47,18 @@
     "stage": "primary hemostasis",
     "lab_map": null,
     "layer": "platelets",
-    "coords": { "platelets": { "x": 180, "y": 40 } },
+    "coords": { "platelets": { "x": 300, "y": 195 } },
     "why": "c-pgi2-1",
     "claims": [
       {
         "id": "c-pgi2-1",
         "kind": "physiology",
-        "text": "Prostacyclin inhibits platelet aggregation and dilates vessels, the opposite of thromboxane A2; the balance between the two sets how much platelet plug forms.",
-        "card_front": "What does prostacyclin do to platelets and vessels, and what does it balance against?",
+        "text": "Prostacyclin, released by intact endothelium, keeps platelets from activating and aggregating. Thromboxane A2 pushes the other way, and the balance between the two sets how much platelet plug forms.",
+        "card_front": "What does prostacyclin do to platelets, and what does it balance against?",
         "sources": [
           { "ref": "sp-hemostasis", "passage": "Prostacyclin inhibits platelet aggregation and produces vasodilation whereas thromboxane A2 and endoperoxides promote platelet aggregation and cause vasoconstriction. The balance between the prostacyclin and thrombox­ane A2 determines the degree of platelet plug forma­tion." },
-          { "ref": "sp-txa2", "passage": "TxA2 is also a known vasoconstrictor and gets activated during times of tissue injury and inflammation. While prostaglandin counterbalances its thrombotic and vasoconstrictor properties, prostacyclin (PGI2) has various physiological and pathological situations where this balance becomes dysregulated." }
+          { "ref": "sp-txa2", "passage": "This inactivated state is supported by the release of prostacyclin (PGI2) from the intact endothelium and the absence of various activating factors." },
+          { "ref": "sp-txa2", "passage": "Named after its role in thrombosis, TxA2 has prothrombotic properties, as it stimulates the activation of platelets and platelet aggregation." }
         ]
       }
     ]
@@ -70,7 +72,7 @@
     "stage": "primary hemostasis",
     "lab_map": null,
     "layer": "platelets",
-    "coords": { "platelets": { "x": 290, "y": 40 } },
+    "coords": { "platelets": { "x": 180, "y": 40 } },
     "why": "c-et-1",
     "claims": [
       {
@@ -81,17 +83,8 @@
         "sources": [
           { "ref": "sp-platelet-activation", "passage": "When the endothelium of a blood vessel is damaged, reflex neural stimulation triggers transient vasoconstriction of the affected vessel. Additionally, the damaged cells release endothelin, further promoting vascular constriction to limit blood loss." },
           { "ref": "openstax-hemostasis", "passage": "In vascular spasm , the smooth muscle in the walls of the vessel contracts dramatically." },
-          { "ref": "openstax-hemostasis", "passage": "The vascular spasm response is believed to be triggered by several chemicals called endothelins that are released by vessel-lining cells and by pain receptors in response to vessel injury." }
-        ]
-      },
-      {
-        "id": "c-et-2",
-        "kind": "physiology",
-        "text": "Vascular spasm typically lasts up to about 30 minutes, though it can last for hours.",
-        "card_front": "How long does vascular spasm typically last?",
-        "sources": [
-          { "ref": "openstax-hemostasis", "passage": "This phenomenon typically lasts for up to 30 minutes, although it can last for hours." },
-          { "ref": "sp-hemostasis", "passage": "Within about 30 minutes of damage/trauma to the blood vessels, vascular spasm ensues, which leads to vasoconstriction." }
+          { "ref": "openstax-hemostasis", "passage": "The vascular spasm response is believed to be triggered by several chemicals called endothelins that are released by vessel-lining cells and by pain receptors in response to vessel injury." },
+          { "ref": "openstax-ap-vessels", "passage": "The endothelium releases local chemicals called endothelins that can constrict the smooth muscle within the walls of the vessel to increase blood pressure." }
         ]
       }
     ]
@@ -115,7 +108,7 @@
         "card_front": "What becomes exposed to blood when the endothelium is damaged?",
         "sources": [
           { "ref": "sp-platelet-activation", "passage": "Subendothelial collagen becomes exposed at the site of injury." },
-          { "ref": "sp-hemostasis", "passage": "At the site of the disrupted endothelial lining, the extracellular matrix (ECM)/ collagen becomes exposed to the blood components." }
+          { "ref": "openstax-ap-vessels", "passage": "Damage to this endothelial lining and exposure of blood to the collagenous fibers beneath is one of the primary causes of clot formation." }
         ]
       }
     ]
@@ -146,11 +139,12 @@
       {
         "id": "c-vwf-2",
         "kind": "physiology",
-        "text": "vWF is stored in endothelial cells (in Weibel-Palade bodies) and in platelet alpha granules.",
+        "text": "vWF is stored inside endothelial cells (in storage packets called Weibel-Palade bodies) and in platelet alpha granules, ready to be released.",
         "card_front": "Where is vWF stored before it is released?",
         "sources": [
           { "ref": "sp-vwf", "passage": "Once complete, vWF is transported for storage in alpha-granules of megakaryocytes and platelets and packaged into Weibel-Palade bodies (WPBs) within endothelial cells." },
-          { "ref": "sp-histology-platelets", "passage": "α-granules: the most abundant and largest secretory granules, containing most of the platelet factors involved in hemostasis, including p-selectin, von Willebrand Factor, and fibrinogen" }
+          { "ref": "sp-histology-platelets", "passage": "α-granules: the most abundant and largest secretory granules, containing most of the platelet factors involved in hemostasis, including p-selectin, von Willebrand Factor, and fibrinogen" },
+          { "ref": "sp-platelet-activation", "passage": "The plasma glycoprotein von Willebrand factor (vWF), released from the Weibel-Palade bodies of endothelial cells, binds to the exposed collagen" }
         ]
       },
       {
@@ -162,16 +156,6 @@
           { "ref": "sp-vwf", "passage": "The 2 main functions of vWF in hemostasis include platelet adhesion and Factor VIII stabilization." },
           { "ref": "sp-vwd", "passage": "Von Willebrand factor increases factor VIII half-life by preventing its degradation." }
         ]
-      },
-      {
-        "id": "c-vwf-4",
-        "kind": "physiology",
-        "text": "The vWF–GPIb grip works best under fast-flowing (high-shear) blood, as in arteries; flow stretches vWF open to expose its platelet-binding site.",
-        "card_front": "Under what flow conditions does vWF grab platelets best?",
-        "sources": [
-          { "ref": "pmc-vwf-platelets", "passage": "On VWF, the binding site for GPIbα is located in the A1 domain where it becomes exposed under arterial shear, allowing an interaction that is enhanced by increasing shear rates. In static conditions, no binding between VWF and GPIbα is observed." },
-          { "ref": "sp-vwf", "passage": "In response to vascular injury, WPB undergoes exocytosis, and vWF multimers exposed to shear stress unfold at the A2 domain. Unfolded vWF multimers form long bundles that anchor to subendothelial collagen and expose binding sites for nearby platelets." }
-        ]
       }
     ]
   },
@@ -180,7 +164,7 @@
     "module": 1,
     "type": "receptor",
     "name": "GPIb (glycoprotein Ib)",
-    "aliases": ["GPIb", "GP1b", "GPIb-IX-V", "glycoprotein Ib", "glycoprotein 1b"],
+    "aliases": ["GPIb", "GP1b", "GP Ib", "GPIb-IX-V", "glycoprotein Ib", "glycoprotein 1b"],
     "stage": "primary hemostasis",
     "lab_map": null,
     "layer": "platelets",
@@ -190,17 +174,26 @@
       {
         "id": "c-gpib-1",
         "kind": "physiology",
-        "text": "GPIb is the platelet receptor for adhesion: it binds vWF, and that binding changes the platelet's shape and activates it.",
-        "card_front": "Which platelet receptor binds vWF, and what happens when it does?",
+        "text": "GPIb is the platelet's adhesion receptor: it grabs vWF anchored at the wound, and that binding helps switch the platelet on (activation).",
+        "card_front": "Which platelet receptor binds vWF, and what does that binding do?",
         "sources": [
           { "ref": "sp-platelet-activation", "passage": "Platelets bind to vWF using their GPIb receptor. This binding results in a conformational change and activation of the platelet, causing the release of hemostatic mediators from the platelet’s granules, including additional vWF found in alpha granules to potentiate platelet accumulation." },
-          { "ref": "sp-vwf", "passage": "The A1 domain of vWF interacts with platelet GP1b receptors to initiate platelet aggregation and activation, which leads to alpha granule content release." }
-        ]
+          { "ref": "sp-vwf", "passage": "Then, glycoprotein 1b (GP1b) receptors on the surface of nearby platelets adhere to the exposed vWF, triggering platelet activation" },
+          { "ref": "pmc-vwf-platelets", "passage": "The engagement of αIIbβ3 integrin with fibrinogen and VWF occurs after initial platelet adhesion mediated by VWF/GPIb interaction" }
+        ],
+        "simplified": {
+          "what": "GPIb–vWF is presented as the way platelets stick and get switched on.",
+          "fuller_truth": "Platelets use several adhesion receptors together, including GPVI, which binds collagen directly, and GPIIb/IIIa. Collagen, ADP, thrombin, and thromboxane A2 all help activate platelets; GPIb–vWF is the first grip, not the only trigger.",
+          "sources": [
+            { "ref": "pmc-vwf-platelets", "passage": "There is now strong evidence that platelets utilize a multistep adhesion mechanism, involving GPIb-IX-V, GPVI and integrin αIIbβ3 to mediate stable adhesion and form aggregates" },
+            { "ref": "sp-txa2", "passage": "However, when a platelet encounters a break in the endothelium, it encounters molecules such as collagen, ADP, thrombin, and TxA2 that trigger its activation." }
+          ]
+        }
       },
       {
         "id": "c-gpib-2",
         "kind": "physiology",
-        "text": "In Bernard-Soulier syndrome the platelet lacks GPIb, so platelets cannot adhere to vWF.",
+        "text": "In Bernard-Soulier syndrome the platelet lacks working GPIb, so platelets cannot adhere to vWF properly.",
         "card_front": "What is missing in Bernard-Soulier syndrome, and which step fails?",
         "sources": [
           { "ref": "sp-platelet-activation", "passage": "In Bernard-Soulier syndrome, there is a genetic deficiency of the GPIb receptor, resulting in impaired platelet adhesion to vWF." },
@@ -255,25 +248,30 @@
       {
         "id": "c-plt-4",
         "kind": "physiology",
-        "text": "Primary hemostasis runs in four steps: vascular spasm (vasoconstriction), platelet adhesion, platelet activation, and platelet aggregation into a plug.",
+        "text": "Primary hemostasis starts with vascular spasm (the vessel constricts). Then platelets adhere (stick) to the wound, become activated, and aggregate (clump together) into a plug.",
         "card_front": "Name the four steps of primary hemostasis in order.",
         "sources": [
-          { "ref": "sp-hemostasis", "passage": "Vaso Constriction. Within about 30 minutes of damage/trauma to the blood vessels, vascular spasm ensues, which leads to vasoconstriction." },
+          { "ref": "openstax-hemostasis", "passage": "There are three steps to the process: vascular spasm, the formation of a platelet plug, and coagulation (blood clotting)." },
+          { "ref": "sp-hemostasis", "passage": "Platelet Activation. The platelets that have adhered undergo very specific changes." },
           { "ref": "sp-hemostasis", "passage": "Platelet Aggregation. With the mechanisms mentioned above, various platelets are activated, adhered to each other and the damaged endothelial surface leading to the formation of a primary platelet plug." },
-          { "ref": "sp-platelet-activation", "passage": "Hemostasis occurs in 2 phases: platelet activation to form a static plug and stabilization of this plug through extrinsic and intrinsic coagulation pathways, known as primary and secondary hemostasis, respectively." }
+          { "ref": "sp-vwf", "passage": "Then, glycoprotein 1b (GP1b) receptors on the surface of nearby platelets adhere to the exposed vWF, triggering platelet activation and a cascade of events, which includes the release of platelet storage granule content such as vWF from alpha granules and the recruitment of more platelets to form a plug at the site of damaged endothelium." }
         ],
         "simplified": {
-          "what": "Vascular spasm is grouped into primary hemostasis here.",
-          "fuller_truth": "Some sources (OpenStax) list vascular spasm, platelet plug, and coagulation as three separate steps of hemostasis; the StatPearls hemostasis article lists vasoconstriction, adhesion, activation, and aggregation as the steps before the coagulation cascade. Both describe the same events."
+          "what": "The steps are taught as a clean sequence.",
+          "fuller_truth": "In a real wound these steps overlap: some platelets are still adhering while others are already activated and aggregating, and the coagulation cascade starts running on activated platelets during the same minutes.",
+          "sources": [
+            { "ref": "sp-platelet-activation", "passage": "As platelets continue to degranulate and their activation continues along a positive feedback loop" },
+            { "ref": "pmc-vitk-cycle", "passage": "The multiple Gla residues in this domain adopt a calcium-dependent conformation that promotes clotting factors binding to a membrane surface [4], such as damaged vascular endothelial cells or activated platelets, which allows the localization of clotting factors near the site of vascular injury to either promote or regulate clotting." }
+          ]
         }
       },
       {
         "id": "c-plt-5",
         "kind": "physiology",
-        "text": "Activated platelets release ADP and thromboxane A2, which activate nearby platelets: a positive feedback loop that recruits more and more platelets to the wound.",
+        "text": "Activated platelets release ADP and make thromboxane A2, which activate nearby platelets. Those platelets release more, a loop that builds on itself (positive feedback) and recruits more and more platelets to the wound.",
         "card_front": "How do activated platelets recruit more platelets?",
         "sources": [
-          { "ref": "sp-histology-platelets", "passage": "Activated platelets release factors such as ADP, thromboxane A2, and thrombin, which can promote the activation of other nearby platelets in a positive feedback mechanism." },
+          { "ref": "sp-txa2", "passage": "TxA2 serves as a positive-feedback mediator during platelet activation. Because of its short half-life of about 30 seconds, TxA2 acts in an autocrine or paracrine matter to activate adjacent platelets, generate more TxA2, and amplify the action of other, more potent, platelet agonists." },
           { "ref": "sp-platelet-activation", "passage": "As platelets continue to degranulate and their activation continues along a positive feedback loop, adenosine diphosphate (ADP) released from dense granules binds to P2Y1 and P2Y12 receptors located on the platelet’s membrane, inducing the expression of the GPIIb/IIIa receptor." }
         ]
       }
@@ -294,7 +292,7 @@
       {
         "id": "c-dg-1",
         "kind": "physiology",
-        "text": "Dense granules are small platelet storage sacs holding small molecules: ADP, serotonin, and calcium.",
+        "text": "Dense granules are small platelet storage packets holding small molecules: ADP, serotonin, and calcium.",
         "card_front": "What do platelet dense granules contain?",
         "sources": [
           { "ref": "sp-histology-platelets", "passage": "Dense granules: the smallest granules, which are visible on electron microscopy as dense bodies and contain adenosine diphosphate and serotonin, as well as high levels of calcium" },
@@ -332,7 +330,8 @@
         "card_front": "What do platelet alpha granules contain?",
         "sources": [
           { "ref": "sp-histology-platelets", "passage": "α-granules: the most abundant and largest secretory granules, containing most of the platelet factors involved in hemostasis, including p-selectin, von Willebrand Factor, and fibrinogen" },
-          { "ref": "sp-txa2", "passage": "Dense granules contain small molecules such as nucleotides (ADP, ATP) or serotonin, whereas alpha granules contain various proteins, including growth factors, chemokines, adhesive molecules such as Von Willebrand Factor (vWF), and coagulation factors." }
+          { "ref": "sp-txa2", "passage": "Dense granules contain small molecules such as nucleotides (ADP, ATP) or serotonin, whereas alpha granules contain various proteins, including growth factors, chemokines, adhesive molecules such as Von Willebrand Factor (vWF), and coagulation factors." },
+          { "ref": "sp-platelet-activation", "passage": "Fibrinogen from alpha granules acts as a link between GPIIb/IIIa receptors on different platelets." }
         ]
       }
     ]
@@ -352,12 +351,21 @@
       {
         "id": "c-adp-1",
         "kind": "physiology",
-        "text": "ADP released from dense granules binds the P2Y12 (and P2Y1) receptors on platelets, which switches on the GPIIb/IIIa receptor so platelets can aggregate.",
+        "text": "ADP released from dense granules binds the P2Y12 receptor on platelets, which switches on the GPIIb/IIIa receptor so platelets can aggregate.",
         "card_front": "What does ADP bind on platelets, and what does that switch on?",
         "sources": [
           { "ref": "sp-platelet-activation", "passage": "As platelets continue to degranulate and their activation continues along a positive feedback loop, adenosine diphosphate (ADP) released from dense granules binds to P2Y1 and P2Y12 receptors located on the platelet’s membrane, inducing the expression of the GPIIb/IIIa receptor." },
-          { "ref": "pmc-p2y12-review", "passage": "Bind to ADP P2Y12 receptor on platelets, preventing ADP from binding and activating the glycoprotein GPIIb/IIIa complex, which is necessary for platelet aggregation" }
-        ]
+          { "ref": "pmc-p2y12-review", "passage": "Bind to ADP P2Y12 receptor on platelets, preventing ADP from binding and activating the glycoprotein GPIIb/IIIa complex, which is necessary for platelet aggregation" },
+          { "ref": "sp-clopidogrel", "passage": "Inhibition of this receptor prevents the downstream activation of the glycoprotein IIb/IIIa receptor complex, which leads to reduced platelet aggregation." }
+        ],
+        "simplified": {
+          "what": "Only P2Y12 is named.",
+          "fuller_truth": "ADP acts on two platelet receptors, P2Y1 and P2Y12. P2Y12 is the one the antiplatelet drugs block.",
+          "sources": [
+            { "ref": "sp-platelet-activation", "passage": "adenosine diphosphate (ADP) released from dense granules binds to P2Y1 and P2Y12 receptors located on the platelet’s membrane" },
+            { "ref": "dm-plavix", "passage": "Clopidogrel is an inhibitor of platelet activation and aggregation through the irreversible binding of its active metabolite to the P2Y 12 class of ADP receptors on platelets." }
+          ]
+        }
       },
       {
         "id": "c-adp-2",
@@ -366,7 +374,7 @@
         "card_front": "What does ADP do for the growing platelet plug?",
         "sources": [
           { "ref": "openstax-hemostasis", "passage": "adenosine diphosphate (ADP), which helps additional platelets to adhere to the injury site, reinforcing and expanding the platelet plug" },
-          { "ref": "sp-histology-platelets", "passage": "Activated platelets release factors such as ADP, thromboxane A2, and thrombin, which can promote the activation of other nearby platelets in a positive feedback mechanism." }
+          { "ref": "sp-platelet-activation", "passage": "As platelets continue to degranulate and their activation continues along a positive feedback loop, adenosine diphosphate (ADP) released from dense granules binds to P2Y1 and P2Y12 receptors located on the platelet’s membrane, inducing the expression of the GPIIb/IIIa receptor." }
         ]
       }
     ]
@@ -400,7 +408,7 @@
     "module": 1,
     "type": "enzyme",
     "name": "COX-1 (cyclooxygenase-1)",
-    "aliases": ["COX-1", "COX1", "cyclooxygenase-1", "cyclooxygenase 1", "cyclooxygenase"],
+    "aliases": ["COX-1", "COX1", "COX 1", "cyclooxygenase-1", "cyclooxygenase 1", "cyclo-oxygenase", "cyclooxygenase"],
     "stage": "primary hemostasis",
     "lab_map": null,
     "layer": "platelets",
@@ -410,30 +418,39 @@
       {
         "id": "c-cox-1",
         "kind": "physiology",
-        "text": "COX-1 is the [[enzyme]] platelets use to make thromboxane A2: it converts arachidonic acid (from the cell membrane) toward TXA2. COX-1 is always present in platelets.",
-        "card_front": "Which platelet enzyme starts the making of thromboxane A2, and from what?",
+        "text": "COX-1 is the [[enzyme]] platelets use to start making thromboxane A2, working on a fat taken from the cell membrane (arachidonic acid). COX-1 is always present in platelets.",
+        "card_front": "Which platelet enzyme starts the making of thromboxane A2?",
         "sources": [
           { "ref": "sp-txa2", "passage": "In the setting of inflammation, phospholipase A2 cleaves arachidonic acid from the cell’s membrane and, through one pathway, is converted to prostaglandin H2 (PGH2) via the action of the enzyme COX." },
           { "ref": "sp-txa2", "passage": "COX-1 is constitutively expressed in platelets, and COX-2 is an inducible form found only in a small fraction of circulating platelets under normal conditions." },
-          { "ref": "sp-platelet-activation", "passage": "This newly inserted platelet receptor, along with thromboxane A2 (TXA2) produced by platelet cyclooxygenase, enables platelet aggregation." }
+          { "ref": "sp-platelet-activation", "passage": "This newly inserted platelet receptor, along with thromboxane A2 (TXA2) produced by platelet cyclooxygenase, enables platelet aggregation." },
+          { "ref": "sp-aspirin", "passage": "This mechanism also results in irreversible inhibition of thromboxane A2 synthesis in platelets, thereby preventing platelet aggregation." }
         ],
         "simplified": {
           "what": "COX-1 is shown making TXA2 in one step.",
-          "fuller_truth": "COX converts arachidonic acid to prostaglandin H2 (PGH2); a second enzyme, thromboxane A2 synthase (TXAS), then converts PGH2 to TXA2."
+          "fuller_truth": "COX converts arachidonic acid to prostaglandin H2 (PGH2); a second enzyme, thromboxane A2 synthase (TXAS), then converts PGH2 to TXA2.",
+          "sources": [
+            { "ref": "sp-txa2", "passage": "PGH2 ultimately converts into the product TxA2 via the enzyme TXAS." },
+            { "ref": "sp-txa2", "passage": "Thromboxane A2 (TxA2) is in the family of lipids known as eicosanoids, which are metabolites of arachidonic acid generated by the sequential action of 3 enzymes—phospholipase A2, COX-1/COX-2 and TxA2 Synthase (TXAS)." }
+          ]
         }
       },
       {
         "id": "c-cox-2",
         "kind": "physiology",
-        "text": "Platelets have no nucleus, so they cannot make new COX enzyme. If COX-1 is permanently disabled, that platelet stays unable to make TXA2 for the rest of its life.",
+        "text": "Platelets cannot make new COX enzyme. If COX-1 is permanently disabled, that platelet stays unable to make thromboxane A2 for the rest of its life.",
         "card_front": "Why can't a platelet replace a permanently blocked COX-1?",
         "sources": [
           { "ref": "sp-aspirin", "passage": "Because platelets cannot synthesize new COX enzymes, aspirin's inhibition of thromboxane A2 synthesis leads to prolonged suppression of platelet aggregation, which underlies its clinical use in cardiovascular and cerebrovascular disease." },
           { "ref": "sp-platelet-activation", "passage": "As expected, bleeding time increases in patients who consume aspirin, and the drug’s irreversible effect persists until the body produces new platelets." }
         ],
         "simplified": {
-          "what": "\"No nucleus\" is given as the reason.",
-          "fuller_truth": "The sources state platelets cannot synthesize new COX enzymes and that the effect lasts until new platelets are made. Platelets do carry some RNA and ribosomes, but they do not replace the inhibited COX-1 in a meaningful amount."
+          "what": "The reason is given as \"platelets can't make new COX\".",
+          "fuller_truth": "Platelets have no nucleus. They do carry some RNA and ribosomes, but they do not replace the blocked COX-1 in a meaningful amount, so recovery depends on new platelets.",
+          "sources": [
+            { "ref": "sp-histology-platelets", "passage": "As described above, platelets are anuclear but do contain ribonucleic acid, ribosomes, mitochondria, and various granules, which are important in enacting platelet function." },
+            { "ref": "sp-platelet-activation", "passage": "the drug’s irreversible effect persists until the body produces new platelets." }
+          ]
         }
       }
     ]
@@ -453,17 +470,17 @@
       {
         "id": "c-txa2-1",
         "kind": "physiology",
-        "text": "TXA2 is a positive-feedback signal: an activated platelet releases it, and it activates neighboring platelets, which make more TXA2.",
+        "text": "Thromboxane A2 is a positive-feedback signal: an activated platelet makes it, and it activates neighboring platelets, which make more.",
         "card_front": "What does TXA2 do to nearby platelets?",
         "sources": [
           { "ref": "sp-txa2", "passage": "TxA2 serves as a positive-feedback mediator during platelet activation. Because of its short half-life of about 30 seconds, TxA2 acts in an autocrine or paracrine matter to activate adjacent platelets, generate more TxA2, and amplify the action of other, more potent, platelet agonists." },
-          { "ref": "sp-histology-platelets", "passage": "Activated platelets release factors such as ADP, thromboxane A2, and thrombin, which can promote the activation of other nearby platelets in a positive feedback mechanism." }
+          { "ref": "sp-platelet-activation", "passage": "This newly inserted platelet receptor, along with thromboxane A2 (TXA2) produced by platelet cyclooxygenase, enables platelet aggregation." }
         ]
       },
       {
         "id": "c-txa2-2",
         "kind": "physiology",
-        "text": "TXA2 also constricts blood vessels.",
+        "text": "Thromboxane A2 also constricts blood vessels.",
         "card_front": "Besides activating platelets, what does TXA2 do to blood vessels?",
         "sources": [
           { "ref": "sp-txa2", "passage": "TxA2 also induces vasoconstriction of smooth muscle." },
@@ -493,7 +510,8 @@
         "card_front": "In the platelet plug, what links one platelet's GPIIb/IIIa to another's?",
         "sources": [
           { "ref": "sp-platelet-activation", "passage": "Fibrinogen from alpha granules acts as a link between GPIIb/IIIa receptors on different platelets." },
-          { "ref": "sp-histology-platelets", "passage": "This protein binds to fibrinogen, allowing cross-linking of platelets and mediating platelet aggregation." }
+          { "ref": "pmc-vwf-platelets", "passage": "Besides VWF, αIIbβ3 integrin binds several other ligands containing an RGD-like sequence: fibrinogen, fibrin, fibronectin and thrombospondin." },
+          { "ref": "sp-txa2", "passage": "It results in fibrinogen/vWF-mediated platelet aggregation." }
         ]
       }
     ]
@@ -503,7 +521,7 @@
     "module": 1,
     "type": "receptor",
     "name": "GPIIb/IIIa (glycoprotein IIb/IIIa)",
-    "aliases": ["GPIIb/IIIa", "GP IIb/IIIa", "GP2b3a", "IIb/IIIa", "glycoprotein IIb/IIIa", "integrin αIIbβ3", "alphaIIb beta3"],
+    "aliases": ["GPIIb/IIIa", "GP IIb/IIIa", "GP2b3a", "GP 2b/3a", "IIb/IIIa", "glycoprotein IIb/IIIa", "integrin αIIbβ3", "alphaIIb beta3"],
     "stage": "primary hemostasis",
     "lab_map": null,
     "layer": "platelets",
@@ -513,7 +531,7 @@
       {
         "id": "c-gp2-1",
         "kind": "physiology",
-        "text": "GPIIb/IIIa is the platelet receptor for aggregation. It only grips once the platelet is activated; then it binds fibrinogen (and vWF), cross-linking platelets into a clump.",
+        "text": "GPIIb/IIIa is the platelet's aggregation receptor. It only grips once the platelet is activated; then it binds fibrinogen (and vWF), cross-linking platelets into a clump.",
         "card_front": "Which platelet receptor does aggregation, and what does it bind?",
         "sources": [
           { "ref": "pmc-vwf-platelets", "passage": "Binding of VWF to αIIbβ3 involves the RGD sequence in the carboxyl-terminal region of VWF (residues 2,507–2,509) and requires prior activation of the integrin." },
@@ -563,16 +581,25 @@
         "sources": [
           { "ref": "openstax-hemostasis", "passage": "A platelet plug can temporarily seal a small opening in a blood vessel. Plug formation, in essence, buys the body time while more sophisticated and durable repairs are being made." },
           { "ref": "sp-platelet-activation", "passage": "Once platelets have linked together, a temporary platelet plug forms, which is later reinforced by the coagulation cascade of secondary hemostasis." }
-        ]
+        ],
+        "simplified": {
+          "what": "Plug first, then coagulation, is taught as a strict sequence.",
+          "fuller_truth": "In the body the two overlap: activated platelets are the surface where clotting factors gather and the coagulation cascade runs (the cell-based model, Module 2). The plug and the fibrin clot are built together.",
+          "sources": [
+            { "ref": "pmc-vitk-cycle", "passage": "The multiple Gla residues in this domain adopt a calcium-dependent conformation that promotes clotting factors binding to a membrane surface [4], such as damaged vascular endothelial cells or activated platelets, which allows the localization of clotting factors near the site of vascular injury to either promote or regulate clotting." },
+            { "ref": "sp-clotting-factors", "passage": "As a result, the clotting factors can adhere to the platelet surface as serine proteases." }
+          ]
+        }
       },
       {
         "id": "c-plug-2",
         "kind": "physiology",
-        "text": "Problems with primary hemostasis (too few platelets or platelets that don't work) typically cause skin and mucosal bleeding: petechiae, purpura, bruising, nosebleeds, gum bleeding.",
+        "text": "Problems with primary hemostasis (too few platelets, or platelets that don't work) typically cause skin and mucosal bleeding: petechiae, purpura, bruising, nosebleeds, gum bleeding.",
         "card_front": "What bleeding pattern points to a platelet (primary hemostasis) problem?",
         "sources": [
           { "ref": "sp-platelet-activation", "passage": "Clinically, these disorders may result in mucosal bleeding or skin bleeding, presenting as petechiae, purpura, or ecchymoses." },
-          { "ref": "sp-thrombocytopenia", "passage": "Thrombocytopenia-related bleeding typically presents as petechiae, non-palpable purpura, and ecchymosis." }
+          { "ref": "sp-thrombocytopenia", "passage": "Thrombocytopenia-related bleeding typically presents as petechiae, non-palpable purpura, and ecchymosis." },
+          { "ref": "sp-petechiae", "passage": "The primary pathophysiological causes of petechiae and purpura are thrombocytopenia, platelet dysfunction, disorders of coagulation, and loss of vascular integrity." }
         ]
       }
     ]
@@ -582,7 +609,7 @@
     "module": 1,
     "type": "lab",
     "name": "Platelet count",
-    "aliases": ["platelet count", "PLT count", "thrombocytopenia"],
+    "aliases": ["platelet count", "PLT count"],
     "stage": "primary hemostasis",
     "lab_map": null,
     "layer": "platelets",
@@ -592,7 +619,7 @@
       {
         "id": "c-pc-1",
         "kind": "physiology",
-        "text": "A normal adult platelet count starts at 150,000/µL; below that is thrombocytopenia.",
+        "text": "A normal adult platelet count starts at 150,000 per microliter of blood; below that is [[thrombocytopenia]].",
         "card_front": "Below what platelet count is thrombocytopenia?",
         "sources": [
           { "ref": "sp-thrombocytopenia", "passage": "Thrombocytopenia is a hematologic condition defined by platelet counts below 150,000/µL." },
@@ -641,20 +668,26 @@
         "text": "von Willebrand disease is the most common inherited bleeding disorder: too little or poorly working vWF, so platelets don't adhere well. It typically shows as easy bruising, nosebleeds, gum bleeding, and heavy periods.",
         "card_front": "What is von Willebrand disease, and how does it usually show up?",
         "sources": [
-          { "ref": "sp-vwf", "passage": "The most common genetic bleeding disorder, vWD, encompasses 4 subtypes inherited in an autosomal dominant pattern." },
+          { "ref": "sp-vwf", "passage": "The most common genetic bleeding disorder, vWD" },
+          { "ref": "sp-platelet-activation", "passage": "The typical subtype of this condition is an autosomal-dominant deficiency of vWF, the most commonly inherited bleeding disorder." },
           { "ref": "sp-vwf", "passage": "Clinical presentation includes a family history of a bleeding disorder, easy bruising, gum bleeding, heavy menses, prolonged bleeding after minor trauma, excess bleeding after major trauma, and symptoms of anemia such as fatigue." },
           { "ref": "sp-vwd", "passage": "Most cases are diagnosed formally after investigating significant bleeding problems such as recurrent and excessive bruising, prolonged bleeding from minor skin trauma, and prolonged bleeding from mucosal surfaces (epistaxis, dental extractions, menstruation)." }
         ],
         "simplified": {
           "what": "vWD is described as one disease.",
-          "fuller_truth": "vWD has types: type 1 (less vWF, most common, about 80%), type 2 (vWF that works poorly, several subtypes), and type 3 (no vWF, most severe). Some type 2 forms affect factor VIII binding more than platelet binding."
+          "fuller_truth": "vWD has types: type 1 (less vWF, the most common, about 80% of cases) and type 3 (no vWF, the most severe), plus type 2 forms where vWF is present but works poorly.",
+          "sources": [
+            { "ref": "sp-vwf", "passage": "Type 1 vWD is the most common, representing about 80% of cases. It is caused by a decreased quantity of otherwise normal functioning vWF from missense mutations or null alleles." },
+            { "ref": "sp-vwf", "passage": "Type 3 vWD is the most severe, caused by the complete absence of vWF" },
+            { "ref": "sp-vwd", "passage": "It has four subtypes (2A-AD or AR, 2B-AD, 2N-AR, 2M-AD)." }
+          ]
         }
       },
       {
         "id": "c-vwd-2",
         "kind": "physiology",
-        "text": "Because vWF carries factor VIII, low vWF can also lower factor VIII, so some vWD can look like hemophilia A.",
-        "card_front": "Why can some von Willebrand disease resemble hemophilia A?",
+        "text": "Because vWF carries factor VIII, low vWF can also lower factor VIII, so some vWD can look like a factor VIII clotting disorder.",
+        "card_front": "Why can some von Willebrand disease also lower factor VIII?",
         "sources": [
           { "ref": "sp-vwf", "passage": "Without vWF, or more specifically, without the D’D3 domains that facilitate vWF and factor VIII binding, factor VIII is rapidly cleared from the circulation, hence the clinical similarities between some forms of vWD and hemophilia A." },
           { "ref": "sp-vwd", "passage": "Factor VIII Activity: Decreased von Willebrand factor leads to increased degradation of factor VIII." }
@@ -671,7 +704,7 @@
     "stage": "primary hemostasis",
     "lab_map": null,
     "layer": "drugs",
-    "coords": { "drugs": { "x": 300, "y": 545 } },
+    "coords": { "drugs": { "x": 300, "y": 560 } },
     "target": "cox1",
     "why": "c-asa-1",
     "drug_note": "Full drug entry (indication, lab, reversal, EMS note) comes in Module 6.",
@@ -679,7 +712,7 @@
       {
         "id": "c-asa-1",
         "kind": "drug",
-        "text": "Aspirin irreversibly blocks COX-1 in platelets, so they cannot make thromboxane A2 and aggregate less.",
+        "text": "Aspirin [[irreversibly]] blocks COX-1 in platelets, so they cannot make thromboxane A2 and aggregate less.",
         "card_front": "What does aspirin block, and what is the result for platelets?",
         "sources": [
           { "ref": "sp-aspirin", "passage": "Aspirin irreversibly inhibits cyclooxygenase-1 (COX-1), abolishing its cyclooxygenase activity, and acetylates COX-2, altering rather than eliminating its enzymatic activity." },
@@ -690,7 +723,7 @@
       {
         "id": "c-asa-2",
         "kind": "drug",
-        "text": "Aspirin's antiplatelet effect lasts about 7 to 10 days, the platelet's lifespan, because blocked platelets can't make new COX-1; function returns only as new platelets are made.",
+        "text": "Aspirin's antiplatelet effect lasts about 7 to 10 days, the platelet's lifespan, because blocked platelets can't make new COX-1. Function returns gradually as new platelets replace them.",
         "card_front": "How long does aspirin's antiplatelet effect last, and why?",
         "sources": [
           { "ref": "sp-aspirin", "passage": "These effects last for about 7 to 10 days, corresponding to the lifespan of platelets." },
@@ -726,8 +759,8 @@
       {
         "id": "c-clop-2",
         "kind": "drug",
-        "text": "Clopidogrel is a [[prodrug]]: the liver (mainly the CYP2C19 enzyme) must convert it to its active form.",
-        "card_front": "Why does clopidogrel depend on the liver enzyme CYP2C19?",
+        "text": "Clopidogrel is a [[prodrug]]: a liver enzyme (mainly one called CYP2C19) must convert it to its active form before it works.",
+        "card_front": "Why does clopidogrel have to be activated by the liver before it works?",
         "sources": [
           { "ref": "dm-plavix", "passage": "Clopidogrel is a prodrug. Inhibition of platelet aggregation by clopidogrel is achieved through an active metabolite. The metabolism of clopidogrel to its active metabolite can be impaired by genetic variations in CYP2C19" },
           { "ref": "sp-clopidogrel", "passage": "Clopidogrel is an inactive prodrug that requires enzymatic activation via various CYP enzymes, including the CYP2C19 and CYP3A4 enzymes, through a 2-step bioactivation process." }
@@ -736,12 +769,12 @@
       {
         "id": "c-clop-3",
         "kind": "drug",
-        "text": "Clopidogrel's block lasts for the life of the affected platelets (7–10 days); platelet function recovers gradually as new platelets are made, often within about 5 days.",
-        "card_front": "How long does clopidogrel's antiplatelet effect last after the last dose?",
+        "text": "Clopidogrel permanently blocks the platelets it reaches, and they live 7–10 days. After the last dose, platelet function comes back gradually as new platelets are made, generally within about 5 days.",
+        "card_front": "After the last dose, how long until platelet function recovers on clopidogrel, and why that long?",
         "sources": [
           { "ref": "dm-plavix", "passage": "P2Y12 inhibitors (thienopyridines), inhibit platelet aggregation for the lifetime of the platelet (7–10 days)." },
-          { "ref": "sp-clopidogrel", "passage": "Active clopidogrel inhibits the platelet for the life of the platelet (7 to 10 days). However, platelet function can begin to return as new platelets turn over, and a return of full function is often seen within 5 days." },
-          { "ref": "pmc-p2y12-review", "passage": "Offset of action 5–7 days 7–10 days 3–5 days" }
+          { "ref": "dm-plavix", "passage": "Platelet aggregation and bleeding time gradually return to baseline values after treatment is discontinued, generally in about 5 days." },
+          { "ref": "sp-clopidogrel", "passage": "Active clopidogrel inhibits the platelet for the life of the platelet (7 to 10 days). However, platelet function can begin to return as new platelets turn over, and a return of full function is often seen within 5 days." }
         ]
       }
     ]
@@ -755,7 +788,7 @@
     "stage": "primary hemostasis",
     "lab_map": null,
     "layer": "drugs",
-    "coords": { "drugs": { "x": 60, "y": 580 } },
+    "coords": { "drugs": { "x": 60, "y": 600 } },
     "target": "p2y12",
     "why": "c-pras-1",
     "drug_note": "Full drug entry (indication, lab, reversal, EMS note) comes in Module 6.",
@@ -763,13 +796,17 @@
       {
         "id": "c-pras-1",
         "kind": "drug",
-        "text": "Prasugrel (Effient) is a prodrug whose active form irreversibly blocks P2Y12; the block lasts for the life of the platelet.",
+        "text": "Prasugrel (Effient) is a prodrug whose active form irreversibly blocks P2Y12. The block lasts for the life of the platelet; function returns over about 5–9 days after stopping as new platelets are made.",
         "card_front": "Prasugrel (Effient): what does it block, and how long does the effect last?",
         "sources": [
-          { "ref": "dm-effient", "passage": "Prasugrel is an inhibitor of platelet activation and aggregation through the irreversible binding of its active metabolite to the P2Y" },
-          { "ref": "dm-effient", "passage": "Platelet inhibition by prasugrel is rapid and irreversible, lasting for the life of the platelet, and is unlikely to be increased in the event of an overdose." },
-          { "ref": "pmc-p2y12-review", "passage": "Binding Irreversible Irreversible Reversible" }
-        ]
+          { "ref": "dm-effient", "passage": "Prasugrel is an inhibitor of platelet activation and aggregation through the irreversible binding of its active metabolite to the P2Y 12 class of ADP receptors on platelets." },
+          { "ref": "dm-effient", "passage": "Prasugrel is a prodrug and is rapidly metabolized to a pharmacologically active metabolite and inactive metabolites." },
+          { "ref": "dm-effient", "passage": "Platelet aggregation gradually returns to baseline values over 5-9 days after discontinuation of prasugrel, this time course being a reflection of new platelet production rather than pharmacokinetics of prasugrel." },
+          { "ref": "pmc-p2y12-review", "passage": "Clopidogrel (Plavix, Bristol-Myers Squibb/Sanofi) Prasugrel (Effient, Eli Lilly) Ticagrelor (Brilinta, AstraZeneca)" },
+          { "ref": "pmc-p2y12-review", "passage": "Binding Irreversible Irreversible Reversible" },
+          { "ref": "pmc-p2y12-review", "passage": "Thienopyridine prodrug metabolized mostly by esterases in GI tract to active metabolite" }
+        ],
+        "source_note": "The PMC review passages are cells from a comparison table whose columns are, in order, clopidogrel, prasugrel, ticagrelor (header row quoted first)."
       }
     ]
   },
@@ -782,7 +819,7 @@
     "stage": "primary hemostasis",
     "lab_map": null,
     "layer": "drugs",
-    "coords": { "drugs": { "x": 60, "y": 615 } },
+    "coords": { "drugs": { "x": 60, "y": 655 } },
     "target": "p2y12",
     "why": "c-tica-1",
     "drug_note": "Full drug entry (indication, lab, reversal, EMS note) comes in Module 6.",
@@ -790,16 +827,15 @@
       {
         "id": "c-tica-1",
         "kind": "drug",
-        "text": "Ticagrelor (Brilinta) also blocks P2Y12, but reversibly, unlike clopidogrel and prasugrel. It does not need liver activation to work.",
-        "card_front": "Ticagrelor (Brilinta): how is its P2Y12 block different from clopidogrel's?",
+        "text": "Ticagrelor (Brilinta) also blocks P2Y12, but [[reversibly]], unlike clopidogrel and prasugrel. Reversible does not mean short: platelet blocking stays measurable for several days after the last dose (back to no-drug levels after about 5 days in the label's data).",
+        "card_front": "Ticagrelor (Brilinta): how is its P2Y12 block different from clopidogrel's, and does that make it short-acting?",
         "sources": [
-          { "ref": "dm-brilinta", "passage": "Ticagrelor and its major metabolite reversibly interact with the platelet P2Y 12 ADP-receptor to prevent signal transduction and platelet activation. Ticagrelor and its active metabolite are approximately equipotent." },
-          { "ref": "pmc-p2y12-review", "passage": "The reversible binding of ticagrelor is both an advantage and a disadvantage." }
+          { "ref": "dm-brilinta", "passage": "Ticagrelor and its major metabolite reversibly interact with the platelet P2Y 12 ADP-receptor to prevent signal transduction and platelet activation." },
+          { "ref": "pmc-p2y12-review", "passage": "The reversible binding of ticagrelor is both an advantage and a disadvantage." },
+          { "ref": "dm-brilinta", "passage": "After 5 days, IPA in the ticagrelor group was similar to IPA in the placebo group." },
+          { "ref": "pmc-p2y12-review", "passage": "Periprocedural hold 5 days 7 days 5 days" }
         ],
-        "simplified": {
-          "what": "\"Does not need liver activation\" is a simplification.",
-          "fuller_truth": "Ticagrelor is metabolized by CYP3A4, but the parent drug and its metabolite are about equally active (the label says approximately equipotent), so unlike clopidogrel it does not depend on conversion to work."
-        }
+        "source_note": "IPA = inhibition of platelet aggregation. The PMC table columns are clopidogrel, prasugrel, ticagrelor."
       }
     ]
   }

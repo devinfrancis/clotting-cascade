@@ -2,15 +2,15 @@
   {
     "term": "enzyme",
     "aliases": ["enzymes", "substrate", "substrates", "enzyme vs substrate"],
-    "definition": "An enzyme is a protein that speeds up a specific chemical reaction without being used up. The substrate is the molecule the enzyme acts on.",
-    "why_here": "In clotting, one activated factor acts as the enzyme and the next factor is its substrate. COX-1 is the enzyme in platelets that starts making thromboxane A2.",
+    "definition": "An enzyme is a protein that speeds up one specific chemical reaction without being used up. The substrate is the molecule the enzyme works on.",
+    "why_here": "In clotting, one activated factor works as the enzyme and the next factor is its substrate. In platelets, COX-1 is the enzyme that starts making thromboxane A2.",
     "node": null,
     "requested_by": "pre-seed",
     "date_added": "2026-10-30",
     "claims": [
       {
         "id": "g-enzyme-1", "kind": "physiology",
-        "text": "Enzymes are molecules (almost all proteins) that catalyze reactions; the molecules they act on are their substrates.",
+        "text": "Enzymes (almost all proteins) speed up chemical reactions; the molecules they act on are their substrates. Activated clotting factors act this way on the next factor in line.",
         "sources": [
           { "ref": "openstax-bio-enzymes", "passage": "A substance that helps a chemical reaction to occur is a catalyst, and the special molecules that catalyze biochemical reactions are enzymes. Almost all enzymes are proteins, comprised of amino acid chains, and they perform the critical task of lowering the activation energies of chemical reactions inside the cell." },
           { "ref": "openstax-bio-enzymes", "passage": "The chemical reactants to which an enzyme binds are the enzyme’s substrates ." },
@@ -23,25 +23,28 @@
     "term": "zymogen",
     "aliases": ["zymogens", "inactive precursor"],
     "definition": "A zymogen is the inactive, \"off\" form of an enzyme. It circulates harmlessly until something cuts it into its active form.",
-    "why_here": "Clotting factors travel in the blood as zymogens; each has to be activated before it works.",
+    "why_here": "The serine-protease clotting factors (II, VII, IX, X, XI, XII) travel in the blood as zymogens and must be activated before they work. Factors V and VIII are different: they are cofactors (helpers), not enzymes.",
     "node": null,
     "requested_by": "pre-seed",
     "date_added": "2026-10-30",
     "claims": [
       {
         "id": "g-zym-1", "kind": "physiology",
-        "text": "Clotting factors circulate as zymogens (inactive precursors) and are activated into enzymes.",
+        "text": "The clotting factors that work as serine-protease enzymes (II, VII, IX, X, XI, XII) circulate as zymogens and are activated into enzymes. Factors V and VIII are not enzymes; they are cofactors. Factor XIII is also activated into an enzyme, but not a serine protease.",
         "sources": [
           { "ref": "sp-coag-pathways", "passage": "The factors circulate through the bloodstream as zymogens and are activated into serine proteases." },
-          { "ref": "sp-clotting-factors", "passage": "The zymogen to enzyme activation was graphically denoted with the letter a, for example, XIIa." }
+          { "ref": "sp-coag-pathways", "passage": "The serine proteases among the clotting factors include factors II, VII, IX, X, XI, and XII, whereas factors V, VIII, and XIII are not classified as serine proteases." },
+          { "ref": "sp-clotting-factors", "passage": "The zymogen to enzyme activation was graphically denoted with the letter a, for example, XIIa." },
+          { "ref": "sp-hemostasis", "passage": "Activated factor IX (factor IXa) binds with its cofactor – activated factor VIII (factor VIIIa), which leads to the activation of factor X (factor Xa)." },
+          { "ref": "sp-hemostasis", "passage": "This reaction is catalyzed by activated factor XIII (factor XIIIa)" }
         ]
       }
     ]
   },
   {
     "term": "\"a\" suffix (activated)",
-    "aliases": ["a suffix", "activated factor", "Xa", "VIIa", "IXa", "IIa", "Va", "VIIIa", "XIIa"],
-    "definition": "A lowercase \"a\" after a factor number means the activated form: factor X is the inactive zymogen, factor Xa is the active enzyme.",
+    "aliases": ["a suffix", "activated factor", "Xa", "VIIa", "IXa", "Va", "VIIIa", "XIIa"],
+    "definition": "A lowercase \"a\" after a factor number means the activated form: factor X is the inactive form, factor Xa is the active one.",
     "why_here": "You'll see \"Xa\", \"VIIa\", and so on throughout the cascade; the \"a\" tells you that factor has been switched on.",
     "node": null,
     "requested_by": "pre-seed",
@@ -60,8 +63,8 @@
   {
     "term": "cofactor",
     "aliases": ["cofactors"],
-    "definition": "In clotting, a cofactor is a helper protein that an activated factor needs beside it to work efficiently. Factors V and VIII are the main ones; they are helpers, not enzymes themselves.",
-    "why_here": "Several clotting steps only run at full speed when the enzyme and its cofactor sit together, for example factor IXa with factor VIIIa, and factor Xa with factor Va.",
+    "definition": "In clotting, a cofactor is a helper protein that an activated factor needs beside it to work efficiently. Factors V and VIII are the main ones; they help but are not enzymes themselves.",
+    "why_here": "Factor IXa works with factor VIIIa, and factor Xa works with factor Va.",
     "node": null,
     "requested_by": "pre-seed",
     "date_added": "2026-10-30",
@@ -75,7 +78,11 @@
         ],
         "simplified": {
           "what": "Cofactor is defined only in its clotting sense (a helper protein).",
-          "fuller_truth": "In general biology, \"cofactor\" often means a non-protein helper such as a metal ion (OpenStax Biology defines cofactors as inorganic ions like iron and magnesium). In coagulation the word is used for helper proteins like factors V and VIII."
+          "fuller_truth": "In general biology, \"cofactor\" often means a non-protein helper such as a metal ion. In coagulation the word is used for helper proteins like factors V and VIII.",
+          "sources": [
+            { "ref": "openstax-bio-enzymes", "passage": "Cofactors are inorganic ions such as iron (Fe++) and magnesium (Mg++)." },
+            { "ref": "sp-coag-pathways", "passage": "In addition, factor Xa requires factor V as a cofactor to cleave prothrombin into thrombin." }
+          ]
         }
       }
     ]
@@ -83,23 +90,29 @@
   {
     "term": "calcium (factor IV) as a bridge",
     "aliases": ["calcium", "Ca2+", "factor IV", "calcium bridge"],
-    "definition": "Calcium (factor IV) acts as a bridge: it links certain clotting factors to the negatively charged fat-based surface of activated platelets, holding them where the clot is forming.",
-    "why_here": "This is how certain clotting factors are held on activated platelets near the wound.",
+    "definition": "Calcium (factor IV) acts as a bridge: it helps hold certain clotting factors onto the surface of activated platelets, right where the clot is forming.",
+    "why_here": "This is how those clotting factors stay gathered at the wound on activated platelets.",
     "node": null,
     "requested_by": "pre-seed",
     "date_added": "2026-10-30",
     "claims": [
       {
         "id": "g-ca-1", "kind": "physiology",
-        "text": "Calcium binds to specially modified (vitamin K-dependent) regions of some clotting factors and to the negatively charged phospholipid of the platelet membrane, letting those factors attach to activated platelets.",
+        "text": "Calcium binds both to certain clotting factors and to the outer surface of the platelet membrane, letting those factors attach to activated platelets near the injury.",
         "sources": [
           { "ref": "sp-clotting-factors", "passage": "Phosphatidylserine is a membrane phospholipid whose polar end has a negative charge and, as a result, provides an excellent surface for a calcium ion to bind." },
           { "ref": "sp-clotting-factors", "passage": "The enzyme adds a negatively charged carboxyl group to glutamic acid residues, which calcium easily binds to." },
+          { "ref": "sp-clotting-factors", "passage": "Clotting factor IV is a calcium ion that plays an important role in all 3 pathways." },
+          { "ref": "openstax-hemostasis", "passage": "IV Calcium ions Inorganic ions in plasma" },
           { "ref": "pmc-vitk-cycle", "passage": "The multiple Gla residues in this domain adopt a calcium-dependent conformation that promotes clotting factors binding to a membrane surface [4], such as damaged vascular endothelial cells or activated platelets, which allows the localization of clotting factors near the site of vascular injury to either promote or regulate clotting." }
         ],
         "simplified": {
           "what": "Calcium is described as a simple bridge.",
-          "fuller_truth": "Calcium binds the Gla (gamma-carboxyglutamic acid) residues of vitamin K-dependent factors, which changes their shape so they can attach to phosphatidylserine on activated platelets."
+          "fuller_truth": "Calcium binds special vitamin K-dependent regions (Gla domains) of some factors, which changes their shape so they can attach to a negatively charged fat (phosphatidylserine) on activated platelets. Module 2 covers the vitamin K-dependent factors.",
+          "sources": [
+            { "ref": "pmc-vitk-cycle", "passage": "The multiple Gla residues in this domain adopt a calcium-dependent conformation that promotes clotting factors binding to a membrane surface [4], such as damaged vascular endothelial cells or activated platelets" },
+            { "ref": "sp-clotting-factors", "passage": "These clotting factors have a region called gamma-carboxyglutamic acid that undergoes vitamin-K dependent carboxylation via gamma-glutamyl carboxylase." }
+          ]
         }
       }
     ]
@@ -126,8 +139,8 @@
   {
     "term": "prodrug",
     "aliases": ["prodrugs"],
-    "definition": "A prodrug is a medicine swallowed in an inactive form that the body (usually the liver) must convert before it works.",
-    "why_here": "Clopidogrel (Plavix) is a prodrug, so it depends on the liver enzyme CYP2C19 to become active.",
+    "definition": "A prodrug is a medicine taken in an inactive form that the body (usually the liver) must convert before it works.",
+    "why_here": "Clopidogrel (Plavix) is a prodrug, so it depends on a liver enzyme to become active.",
     "node": "clopidogrel",
     "requested_by": "pre-seed",
     "date_added": "2026-10-30",
@@ -138,6 +151,339 @@
         "sources": [
           { "ref": "dm-plavix", "passage": "Clopidogrel is a prodrug. Inhibition of platelet aggregation by clopidogrel is achieved through an active metabolite." },
           { "ref": "sp-clopidogrel", "passage": "Clopidogrel is an inactive prodrug that requires enzymatic activation via various CYP enzymes, including the CYP2C19 and CYP3A4 enzymes, through a 2-step bioactivation process." }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "receptor",
+    "aliases": ["receptors"],
+    "definition": "A receptor is a protein on (or in) a cell that grabs one specific molecule. When that molecule binds, the cell responds.",
+    "why_here": "Platelets work through their receptors: GPIb grabs vWF, P2Y12 grabs ADP, GPIIb/IIIa grabs fibrinogen.",
+    "node": null,
+    "requested_by": "reviewer-2",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-rec-1", "kind": "physiology",
+        "text": "A receptor is a protein that selectively binds a specific molecule, and the binding triggers a response inside the cell.",
+        "sources": [
+          { "ref": "openstax-ap-membrane", "passage": "A receptor is a type of recognition protein that can selectively bind a specific molecule outside the cell, and this binding induces a chemical reaction within the cell." },
+          { "ref": "openstax-bio-signaling", "passage": "Receptors are protein molecules in the target cell or on its surface that bind ligand." }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "glycoprotein",
+    "aliases": ["glycoproteins"],
+    "definition": "A glycoprotein is a protein with sugar chains attached. The \"GP\" in GPIb and GPIIb/IIIa stands for glycoprotein.",
+    "why_here": "vWF and the main platelet receptors are glycoproteins.",
+    "node": null,
+    "requested_by": "reviewer-2",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-gp-1", "kind": "physiology",
+        "text": "A glycoprotein is a protein with carbohydrate (sugar) molecules attached; vWF and the platelet GP receptors are glycoproteins.",
+        "sources": [
+          { "ref": "openstax-ap-membrane", "passage": "A glycoprotein is a protein that has carbohydrate molecules attached, which extend into the extracellular matrix." },
+          { "ref": "sp-platelet-activation", "passage": "The plasma glycoprotein von Willebrand factor (vWF), released from the Weibel-Palade bodies of endothelial cells, binds to the exposed collagen" },
+          { "ref": "sp-vwf", "passage": "Then, glycoprotein 1b (GP1b) receptors on the surface of nearby platelets adhere to the exposed vWF" }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "granule",
+    "aliases": ["granules", "degranulate", "degranulation"],
+    "definition": "A granule is a small storage packet inside a platelet. When the platelet is activated, it releases (\"degranulates\") the contents.",
+    "why_here": "Platelets carry two main kinds: dense granules (small molecules like ADP) and alpha granules (proteins like vWF and fibrinogen).",
+    "node": "dense-granule",
+    "requested_by": "reviewer-2",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-gran-1", "kind": "physiology",
+        "text": "Platelets contain alpha and dense granules that release specific substances needed for hemostasis.",
+        "sources": [
+          { "ref": "sp-platelet-activation", "passage": "Within the cytoplasm of platelets are alpha and dense granules that each release specific mediators necessary for efficient hemostasis" },
+          { "ref": "sp-histology-platelets", "passage": "There are three distinct types of platelet granule" },
+          { "ref": "sp-txa2", "passage": "Dense granules contain small molecules such as nucleotides (ADP, ATP) or serotonin, whereas alpha granules contain various proteins" }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "adhesion vs aggregation",
+    "aliases": ["adhesion", "adhere", "aggregation", "aggregate", "platelet adhesion", "platelet aggregation"],
+    "definition": "Adhesion is platelets sticking to the wound (the vessel wall). Aggregation is platelets sticking to each other to build a clump.",
+    "why_here": "They use different receptors: GPIb for adhesion to vWF, GPIIb/IIIa for aggregation through fibrinogen.",
+    "node": "gp2b3a",
+    "requested_by": "reviewer-2",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-adag-1", "kind": "physiology",
+        "text": "Adhesion is platelets binding to the injured vessel surface; aggregation is platelets binding to each other.",
+        "sources": [
+          { "ref": "sp-platelet-activation", "passage": "binds to the exposed collagen and serves as the site of platelet adhesion to the disrupted vessel surface" },
+          { "ref": "sp-hemostasis", "passage": "Platelet Aggregation. With the mechanisms mentioned above, various platelets are activated, adhered to each other and the damaged endothelial surface leading to the formation of a primary platelet plug." },
+          { "ref": "sp-txa2", "passage": "greatly facilitates the adhesion of platelets to each other and components of the extracellular matrix." }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "platelet activation",
+    "aliases": ["activated platelet", "activated platelets"],
+    "definition": "Platelet activation is a platelet switching on: it changes shape, releases its granules, and turns on its aggregation receptor so it can clump.",
+    "why_here": "Resting platelets do nothing; activation is what turns them into plug builders.",
+    "node": "platelet",
+    "requested_by": "reviewer-2",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-act-1", "kind": "physiology",
+        "text": "An activated platelet changes shape, releases its granule contents, and aggregates.",
+        "sources": [
+          { "ref": "sp-txa2", "passage": "When TxA2 binds to TP, platelet activation leads to platelet-shape change, activation of phospholipase A2, platelet degranulation of dense granules and alpha granules, and platelet aggregation." },
+          { "ref": "sp-platelet-activation", "passage": "This binding results in a conformational change and activation of the platelet, causing the release of hemostatic mediators from the platelet’s granules" }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "hemostasis",
+    "aliases": ["primary hemostasis", "secondary hemostasis", "haemostasis"],
+    "definition": "Hemostasis is the body stopping a bleed. Primary hemostasis builds the temporary platelet plug; secondary hemostasis is the coagulation cascade, which reinforces the plug with fibrin.",
+    "why_here": "Module 1 is primary hemostasis; Module 2 is the coagulation cascade.",
+    "node": "platelet-plug",
+    "requested_by": "reviewer-2",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-hem-1", "kind": "physiology",
+        "text": "Hemostasis is the process that stops bleeding from a vessel. Primary hemostasis forms the platelet plug; the coagulation cascade of secondary hemostasis then reinforces it.",
+        "sources": [
+          { "ref": "sp-hemostasis", "passage": "Hemostasis is the mechanism that leads to cessation of bleeding from a blood vessel." },
+          { "ref": "openstax-hemostasis", "passage": "Platelets are key players in hemostasis , the process by which the body seals a ruptured blood vessel and prevents further loss of blood." },
+          { "ref": "sp-platelet-activation", "passage": "Once platelets have linked together, a temporary platelet plug forms, which is later reinforced by the coagulation cascade of secondary hemostasis." }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "fibrin",
+    "aliases": ["fibrin mesh", "fibrin clot"],
+    "definition": "Fibrin is a tough, thread-like protein made from fibrinogen. Its mesh traps platelets and blood cells and makes the clot durable.",
+    "why_here": "Fibrin is what turns the temporary platelet plug into a lasting clot.",
+    "node": "fibrinogen",
+    "requested_by": "reviewer-2",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-fib-1", "kind": "physiology",
+        "text": "Fibrin is an insoluble, thread-like protein made from fibrinogen (by thrombin); its mesh traps platelets and blood cells in the clot.",
+        "sources": [
+          { "ref": "openstax-hemostasis", "passage": "The result is the production of a gelatinous but robust clot made up of a mesh of fibrin —an insoluble filamentous protein derived from fibrinogen, the plasma protein introduced earlier—in which platelets and blood cells are trapped." },
+          { "ref": "sp-coag-pathways", "passage": "Factor IIa (thrombin) activates fibrinogen into fibrin." }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "coagulation cascade",
+    "aliases": ["coagulation", "clotting cascade", "the cascade"],
+    "definition": "The coagulation cascade is a chain of clotting factors, each activating the next, that ends by turning fibrinogen into fibrin.",
+    "why_here": "It is the \"secondary\" step that reinforces the platelet plug; Module 2 teaches it.",
+    "node": null,
+    "requested_by": "reviewer-2",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-coag-1", "kind": "physiology",
+        "text": "In the coagulation cascade, each activated clotting factor activates the next, ending in fibrin formation.",
+        "sources": [
+          { "ref": "openstax-hemostasis", "passage": "The process is sometimes characterized as a cascade, because one event prompts the next as in a multi-level waterfall." },
+          { "ref": "sp-coag-pathways", "passage": "These serine proteases act as a catalyst to cleave the next zymogen into more serine proteases and ultimately activate fibrinogen." }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "thrombin",
+    "aliases": ["factor IIa", "IIa"],
+    "definition": "Thrombin (activated factor II) is the key clotting enzyme: it turns fibrinogen into fibrin and also activates platelets.",
+    "why_here": "It shows up in Module 1 as one of the signals that activate platelets; Module 2 covers it in full.",
+    "node": null,
+    "requested_by": "reviewer-2",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-thr-1", "kind": "physiology",
+        "text": "Thrombin (factor IIa) is made from its inactive form, prothrombin (factor II); it converts fibrinogen into fibrin, and is one of the molecules that activates platelets.",
+        "sources": [
+          { "ref": "sp-coag-pathways", "passage": "Factor IIa (thrombin) activates fibrinogen into fibrin." },
+          { "ref": "sp-hemostasis", "passage": "Factor Xa binds to activated factor V (factor Va) and calcium and generates a prothrombinase complex that cleaves the prothrombin into thrombin." },
+          { "ref": "sp-txa2", "passage": "The predominant activators of platelets are diffusible stimuli such as ADP, TxA2, and thrombin." }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "clotting factor",
+    "aliases": ["clotting factors", "coagulation factor", "coagulation factors", "factor VIII"],
+    "definition": "Clotting factors are the substances that work in the coagulation cascade, numbered with Roman numerals. All are proteins (most made by the liver) except calcium, which is factor IV. Factor VIII is one of the helper (cofactor) proteins.",
+    "why_here": "Module 1 meets factor VIII because vWF carries it; the full list comes in Module 2.",
+    "node": null,
+    "requested_by": "reviewer-2",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-cf-1", "kind": "physiology",
+        "text": "Clotting factors activate one another in coagulation. All are proteins, most made in the liver, except calcium (factor IV). Factor VIII is a cofactor.",
+        "sources": [
+          { "ref": "openstax-hemostasis", "passage": "In the coagulation cascade, chemicals called clotting factors (or coagulation factors) prompt reactions that activate still more coagulation factors." },
+          { "ref": "sp-hemostasis", "passage": "The liver produces the majority of the proteins that function as clotting factors and as anticoagulants." },
+          { "ref": "sp-hemostasis", "passage": "Activated factor IX (factor IXa) binds with its cofactor – activated factor VIII (factor VIIIa)" },
+          { "ref": "sp-clotting-factors", "passage": "Clotting factor IV is a calcium ion that plays an important role in all 3 pathways." },
+          { "ref": "openstax-hemostasis", "passage": "IV Calcium ions Inorganic ions in plasma" }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "irreversible vs reversible binding",
+    "aliases": ["irreversible", "irreversibly", "reversible", "reversibly"],
+    "definition": "An irreversible drug binds its target permanently, so the effect lasts until the body makes new targets (for platelets, new platelets). A reversible drug can let go, so its effect fades as drug levels fall.",
+    "why_here": "Aspirin, clopidogrel, and prasugrel block platelets irreversibly; ticagrelor blocks reversibly but its effect still lasts days.",
+    "node": null,
+    "requested_by": "reviewer-2",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-rev-1", "kind": "drug",
+        "text": "Irreversible platelet blockers act for the life of the platelet; recovery depends on new platelet production. Ticagrelor binds reversibly.",
+        "sources": [
+          { "ref": "dm-effient", "passage": "Platelet aggregation gradually returns to baseline values over 5-9 days after discontinuation of prasugrel, this time course being a reflection of new platelet production rather than pharmacokinetics of prasugrel." },
+          { "ref": "sp-platelet-activation", "passage": "the drug’s irreversible effect persists until the body produces new platelets." },
+          { "ref": "dm-brilinta", "passage": "Ticagrelor and its major metabolite reversibly interact with the platelet P2Y 12 ADP-receptor to prevent signal transduction and platelet activation." }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "endothelium",
+    "aliases": ["endothelial", "endothelial lining"],
+    "definition": "The endothelium is the thin layer of cells lining the inside of every blood vessel and the heart.",
+    "why_here": "Intact endothelium keeps platelets quiet; damaged endothelium exposes collagen and starts the plug.",
+    "node": "endothelium",
+    "requested_by": "reviewer-2",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-endo-1", "kind": "physiology",
+        "text": "The endothelium is the single-cell-layer lining of the entire vascular system, including the heart chambers.",
+        "sources": [
+          { "ref": "openstax-ap-vessels", "passage": "Lining the tunica intima is the specialized simple squamous epithelium called the endothelium, which is continuous throughout the entire vascular system, including the lining of the chambers of the heart." },
+          { "ref": "openstax-hemostasis", "passage": "The vascular spasm response is believed to be triggered by several chemicals called endothelins that are released by vessel-lining cells" }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "subendothelial",
+    "aliases": ["subendothelium", "subendothelial matrix"],
+    "definition": "Subendothelial means \"under the endothelium\": the connective tissue layer, rich in collagen, just beneath the vessel lining.",
+    "why_here": "When the lining breaks, this collagen-rich layer is exposed to blood and platelets stick there.",
+    "node": "collagen",
+    "requested_by": "reviewer-2",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-sub-1", "kind": "physiology",
+        "text": "Beneath the endothelium are connective tissue and collagen fibers; damage to the lining exposes this collagen to blood.",
+        "sources": [
+          { "ref": "openstax-ap-vessels", "passage": "Damage to this endothelial lining and exposure of blood to the collagenous fibers beneath is one of the primary causes of clot formation." },
+          { "ref": "sp-platelet-activation", "passage": "Subendothelial collagen becomes exposed at the site of injury." }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "petechiae",
+    "aliases": ["petechia", "petechial"],
+    "definition": "Petechiae are pinpoint red or purple dots, under 2 mm, from tiny bleeds in the skin or mucous membranes. They don't fade when pressed.",
+    "why_here": "They are a classic sign of a platelet problem.",
+    "node": "platelet-plug",
+    "requested_by": "reviewer-2",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-pet-1", "kind": "physiology",
+        "text": "Petechiae are pinpoint, non-blanching spots under 2 mm caused by bleeding under the skin or mucous membranes.",
+        "sources": [
+          { "ref": "sp-petechiae", "passage": "Petechiae are pinpoint non-blanching spots that measure less than 2 mm in size and affect the skin and mucous membranes." },
+          { "ref": "openrn-nursing-skills", "passage": "Petechiae are tiny red dots caused by bleeding under the skin that may appear like a rash." }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "purpura",
+    "aliases": ["ecchymosis", "ecchymoses"],
+    "definition": "Purpura are larger (over 2 mm) non-blanching purple spots from bleeding under the skin; ecchymosis is the medical word for a bruise.",
+    "why_here": "Along with petechiae, purpura and easy bruising point to a platelet problem.",
+    "node": "platelet-plug",
+    "requested_by": "reviewer-2",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-pur-1", "kind": "physiology",
+        "text": "Purpura is a spot of bleeding under the skin larger than 2 mm; like petechiae, it does not fade (blanch) when pressed.",
+        "sources": [
+          { "ref": "sp-petechiae", "passage": "Purpura is a non-blanching spot that measures greater than 2 mm." },
+          { "ref": "openrn-nursing-skills", "passage": "Large petechiae are called purpura." },
+          { "ref": "openrn-nursing-skills", "passage": "A rash will blanch (i.e., whiten with pressure) but petechiae and purpura do not blanch." }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "mucosal bleeding",
+    "aliases": ["mucocutaneous bleeding", "mucosal", "mucous membranes"],
+    "definition": "Mucosal bleeding is bleeding from the moist linings of the body: nosebleeds, bleeding gums, heavy periods, bleeding after dental work.",
+    "why_here": "This pattern, plus skin bleeding, is typical of platelet and vWF problems.",
+    "node": "platelet-plug",
+    "requested_by": "reviewer-2",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-muc-1", "kind": "physiology",
+        "text": "Mucosal bleeding includes nosebleeds (epistaxis), bleeding gums, bleeding after dental extractions, and heavy menstrual bleeding.",
+        "sources": [
+          { "ref": "sp-vwd", "passage": "prolonged bleeding from mucosal surfaces (epistaxis, dental extractions, menstruation)" },
+          { "ref": "sp-thrombocytopenia", "passage": "A detailed bleeding history should include petechiae, hemorrhagic events, gingival bleeding, and epistaxis." }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "thrombocytopenia",
+    "aliases": ["low platelets", "low platelet count"],
+    "definition": "Thrombocytopenia means a low platelet count: below 150,000 platelets per microliter of blood in adults.",
+    "why_here": "Too few platelets means a weak platelet plug and skin and mucosal bleeding.",
+    "node": "platelet-count",
+    "requested_by": "reviewer-2",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-tcp-1", "kind": "physiology",
+        "text": "Thrombocytopenia is a platelet count below 150,000 per microliter in adults.",
+        "sources": [
+          { "ref": "sp-thrombocytopenia", "passage": "Thrombocytopenia is characterized by a platelet count that falls below the established normal threshold, specifically 150,000/µL in adults." },
+          { "ref": "sp-histology-platelets", "passage": "Normal platelet levels in adults are between 150 to 350x10^9/L" }
         ]
       }
     ]
