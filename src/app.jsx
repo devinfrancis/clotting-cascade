@@ -3,31 +3,46 @@ import { Home } from './screens/Home.jsx';
 import { Learn } from './screens/Learn.jsx';
 import { Study } from './screens/Study.jsx';
 import { Settings } from './screens/Settings.jsx';
+import { Quiz } from './screens/Quiz.jsx';
+import { Flashcards } from './screens/Flashcards.jsx';
 import { SearchBar } from './components/SearchBar.jsx';
 import { InstallGuide } from './components/InstallGuide.jsx';
+import { Overlays } from './components/Overlays.jsx';
+import { closeAllOverlays } from './ui.js';
 
-const SCREENS = [
-  { id: 'home', label: 'Home', C: Home },
-  { id: 'learn', label: 'Learn', C: Learn },
-  { id: 'study', label: 'Study', C: Study },
-  { id: 'settings', label: 'Settings', C: Settings }
+const TABS = [
+  { id: 'home', label: 'Home' },
+  { id: 'learn', label: 'Learn' },
+  { id: 'study', label: 'Study' },
+  { id: 'settings', label: 'Settings' }
 ];
 
 // Hash routing, so GitHub Pages never needs server-side rewrites.
-function currentRoute() {
-  const id = location.hash.replace(/^#\/?/, '').split('/')[0];
-  return SCREENS.some((s) => s.id === id) ? id : 'home';
+// #/home  #/learn[/node]  #/study[/goal/id]  #/flash  #/quiz/<mode>/<goal>[/which]  #/settings
+function parse() {
+  const parts = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean);
+  return { screen: parts[0] || 'home', parts: parts.slice(1) };
 }
 
 export function App() {
-  const [route, setRoute] = useState(currentRoute());
+  const [r, setR] = useState(parse());
   useEffect(() => {
-    const onHash = () => setRoute(currentRoute());
+    const onHash = () => { setR(parse()); closeAllOverlays(); window.scrollTo(0, 0); };
     window.addEventListener('hashchange', onHash);
     return () => window.removeEventListener('hashchange', onHash);
   }, []);
 
-  const Screen = SCREENS.find((s) => s.id === route).C;
+  let screen;
+  const [a, b, c] = r.parts;
+  switch (r.screen) {
+    case 'learn': screen = <Learn param={a} />; break;
+    case 'study': screen = <Study param={a} sub={b} />; break;
+    case 'settings': screen = <Settings />; break;
+    case 'flash': screen = <Flashcards />; break;
+    case 'quiz': screen = <Quiz key={r.parts.join('/')} mode={a} goalId={b} which={c} />; break;
+    default: screen = <Home />;
+  }
+  const tab = r.screen === 'flash' || r.screen === 'quiz' ? 'study' : r.screen;
 
   return (
     <div class="shell">
@@ -35,14 +50,15 @@ export function App() {
         <SearchBar />
       </header>
       <main class="content">
-        <InstallGuide />
-        <Screen />
+        {r.screen === 'home' && <InstallGuide />}
+        {screen}
       </main>
       <nav class="tabs">
-        {SCREENS.map((s) => (
-          <a key={s.id} href={`#/${s.id}`} class={route === s.id ? 'on' : ''}>{s.label}</a>
+        {TABS.map((t) => (
+          <a key={t.id} href={`#/${t.id}`} class={tab === t.id ? 'on' : ''}>{t.label}</a>
         ))}
       </nav>
+      <Overlays />
     </div>
   );
 }
