@@ -1,0 +1,20 @@
+[
+  { "id": "e1", "from": "prostacyclin", "to": "platelet", "relation": "inhibits", "label": "keeps resting platelets inactive", "layer": "platelets", "claim": "c-pgi2-1" },
+  { "id": "e2", "from": "vwf", "to": "collagen", "relation": "binds", "label": "anchors to exposed collagen", "layer": "platelets", "claim": "c-vwf-1" },
+  { "id": "e3", "from": "gpib", "to": "vwf", "relation": "binds", "label": "adhesion", "layer": "platelets", "claim": "c-gpib-1" },
+  { "id": "e4", "from": "gpib", "to": "platelet", "relation": "activates", "label": "binding activates the platelet", "layer": "platelets", "claim": "c-gpib-1" },
+  { "id": "e5", "from": "dense-granule", "to": "adp", "relation": "releases", "label": "releases", "layer": "platelets", "claim": "c-dg-1" },
+  { "id": "e6", "from": "alpha-granule", "to": "fibrinogen", "relation": "releases", "label": "releases", "layer": "platelets", "claim": "c-ag-1" },
+  { "id": "e7", "from": "alpha-granule", "to": "vwf", "relation": "releases", "label": "releases more vWF", "layer": "platelets", "claim": "c-vwf-2" },
+  { "id": "e8", "from": "adp", "to": "p2y12", "relation": "binds", "label": "binds", "layer": "platelets", "claim": "c-adp-1" },
+  { "id": "e9", "from": "p2y12", "to": "gp2b3a", "relation": "activates", "label": "switches on", "layer": "platelets", "claim": "c-p2y12-1" },
+  { "id": "e10", "from": "cox1", "to": "txa2", "relation": "produces", "label": "makes (from arachidonic acid)", "layer": "platelets", "claim": "c-cox-1" },
+  { "id": "e11", "from": "txa2", "to": "platelet", "relation": "activates", "label": "activates nearby platelets", "layer": "platelets", "claim": "c-txa2-1" },
+  { "id": "e12", "from": "fibrinogen", "to": "gp2b3a", "relation": "binds", "label": "bridges platelets", "layer": "platelets", "claim": "c-fgn-1" },
+  { "id": "e13", "from": "gp2b3a", "to": "platelet-plug", "relation": "produces", "label": "aggregation", "layer": "platelets", "claim": "c-gp2-1" },
+  { "id": "e14", "from": "platelet-count", "to": "platelet", "relation": "tracks", "label": "measures how many", "layer": "platelets", "claim": "c-pc-1" },
+  { "id": "e15", "from": "aspirin", "to": "cox1", "relation": "inhibits", "label": "irreversible", "layer": "drugs", "claim": "c-asa-1" },
+  { "id": "e16", "from": "clopidogrel", "to": "p2y12", "relation": "inhibits", "label": "irreversible", "layer": "drugs", "claim": "c-clop-1" },
+  { "id": "e17", "from": "prasugrel", "to": "p2y12", "relation": "inhibits", "label": "irreversible", "layer": "drugs", "claim": "c-pras-1" },
+  { "id": "e18", "from": "ticagrelor", "to": "p2y12", "relation": "inhibits", "label": "reversible", "layer": "drugs", "claim": "c-tica-1" }
+]

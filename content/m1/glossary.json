@@ -1,0 +1,145 @@
+[
+  {
+    "term": "enzyme",
+    "aliases": ["enzymes", "substrate", "substrates", "enzyme vs substrate"],
+    "definition": "An enzyme is a protein that speeds up a specific chemical reaction without being used up. The substrate is the molecule the enzyme acts on.",
+    "why_here": "In clotting, one activated factor acts as the enzyme and the next factor is its substrate. COX-1 is the enzyme in platelets that starts making thromboxane A2.",
+    "node": null,
+    "requested_by": "pre-seed",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-enzyme-1", "kind": "physiology",
+        "text": "Enzymes are molecules (almost all proteins) that catalyze reactions; the molecules they act on are their substrates.",
+        "sources": [
+          { "ref": "openstax-bio-enzymes", "passage": "A substance that helps a chemical reaction to occur is a catalyst, and the special molecules that catalyze biochemical reactions are enzymes. Almost all enzymes are proteins, comprised of amino acid chains, and they perform the critical task of lowering the activation energies of chemical reactions inside the cell." },
+          { "ref": "openstax-bio-enzymes", "passage": "The chemical reactants to which an enzyme binds are the enzyme’s substrates ." },
+          { "ref": "sp-coag-pathways", "passage": "These serine proteases act as a catalyst to cleave the next zymogen into more serine proteases and ultimately activate fibrinogen." }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "zymogen",
+    "aliases": ["zymogens", "inactive precursor"],
+    "definition": "A zymogen is the inactive, \"off\" form of an enzyme. It circulates harmlessly until something cuts it into its active form.",
+    "why_here": "Clotting factors travel in the blood as zymogens; each has to be activated before it works.",
+    "node": null,
+    "requested_by": "pre-seed",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-zym-1", "kind": "physiology",
+        "text": "Clotting factors circulate as zymogens (inactive precursors) and are activated into enzymes.",
+        "sources": [
+          { "ref": "sp-coag-pathways", "passage": "The factors circulate through the bloodstream as zymogens and are activated into serine proteases." },
+          { "ref": "sp-clotting-factors", "passage": "The zymogen to enzyme activation was graphically denoted with the letter a, for example, XIIa." }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "\"a\" suffix (activated)",
+    "aliases": ["a suffix", "activated factor", "Xa", "VIIa", "IXa", "IIa", "Va", "VIIIa", "XIIa"],
+    "definition": "A lowercase \"a\" after a factor number means the activated form: factor X is the inactive zymogen, factor Xa is the active enzyme.",
+    "why_here": "You'll see \"Xa\", \"VIIa\", and so on throughout the cascade; the \"a\" tells you that factor has been switched on.",
+    "node": null,
+    "requested_by": "pre-seed",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-asuf-1", "kind": "physiology",
+        "text": "Activation of a clotting factor is written by adding the letter a, as in XIIa or VIIa.",
+        "sources": [
+          { "ref": "sp-clotting-factors", "passage": "The zymogen to enzyme activation was graphically denoted with the letter a, for example, XIIa." },
+          { "ref": "sp-hemostasis", "passage": "The tissue factor binds to factor VII and activates it. The activated factor VII (factor VIIa) further activates factor X and factor IX via proteolysis." }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "cofactor",
+    "aliases": ["cofactors"],
+    "definition": "In clotting, a cofactor is a helper protein that an activated factor needs beside it to work efficiently. Factors V and VIII are the main ones; they are helpers, not enzymes themselves.",
+    "why_here": "Several clotting steps only run at full speed when the enzyme and its cofactor sit together, for example factor IXa with factor VIIIa, and factor Xa with factor Va.",
+    "node": null,
+    "requested_by": "pre-seed",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-cof-1", "kind": "physiology",
+        "text": "Factor V is the cofactor for factor Xa, and factor VIII is the cofactor for factor IXa.",
+        "sources": [
+          { "ref": "sp-coag-pathways", "passage": "In addition, factor Xa requires factor V as a cofactor to cleave prothrombin into thrombin." },
+          { "ref": "sp-hemostasis", "passage": "Activated factor IX (factor IXa) binds with its cofactor – activated factor VIII (factor VIIIa), which leads to the activation of factor X (factor Xa)." }
+        ],
+        "simplified": {
+          "what": "Cofactor is defined only in its clotting sense (a helper protein).",
+          "fuller_truth": "In general biology, \"cofactor\" often means a non-protein helper such as a metal ion (OpenStax Biology defines cofactors as inorganic ions like iron and magnesium). In coagulation the word is used for helper proteins like factors V and VIII."
+        }
+      }
+    ]
+  },
+  {
+    "term": "calcium (factor IV) as a bridge",
+    "aliases": ["calcium", "Ca2+", "factor IV", "calcium bridge"],
+    "definition": "Calcium (factor IV) acts as a bridge: it links certain clotting factors to the negatively charged fat-based surface of activated platelets, holding them where the clot is forming.",
+    "why_here": "This is how certain clotting factors are held on activated platelets near the wound.",
+    "node": null,
+    "requested_by": "pre-seed",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-ca-1", "kind": "physiology",
+        "text": "Calcium binds to specially modified (vitamin K-dependent) regions of some clotting factors and to the negatively charged phospholipid of the platelet membrane, letting those factors attach to activated platelets.",
+        "sources": [
+          { "ref": "sp-clotting-factors", "passage": "Phosphatidylserine is a membrane phospholipid whose polar end has a negative charge and, as a result, provides an excellent surface for a calcium ion to bind." },
+          { "ref": "sp-clotting-factors", "passage": "The enzyme adds a negatively charged carboxyl group to glutamic acid residues, which calcium easily binds to." },
+          { "ref": "pmc-vitk-cycle", "passage": "The multiple Gla residues in this domain adopt a calcium-dependent conformation that promotes clotting factors binding to a membrane surface [4], such as damaged vascular endothelial cells or activated platelets, which allows the localization of clotting factors near the site of vascular injury to either promote or regulate clotting." }
+        ],
+        "simplified": {
+          "what": "Calcium is described as a simple bridge.",
+          "fuller_truth": "Calcium binds the Gla (gamma-carboxyglutamic acid) residues of vitamin K-dependent factors, which changes their shape so they can attach to phosphatidylserine on activated platelets."
+        }
+      }
+    ]
+  },
+  {
+    "term": "megakaryocyte",
+    "aliases": ["megakaryocytes"],
+    "definition": "A megakaryocyte is a giant cell in the bone marrow. Platelets are pieces that break off from it.",
+    "why_here": "Platelets are made by megakaryocytes breaking into fragments in the bone marrow.",
+    "node": "platelet",
+    "requested_by": "pre-seed",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-mk-1", "kind": "physiology",
+        "text": "Megakaryocytes are large bone-marrow cells that fragment to form platelets.",
+        "sources": [
+          { "ref": "sp-histology-platelets", "passage": "Platelets form by the fragmentation of megakaryocytes within the bone marrow." },
+          { "ref": "sp-hemostasis", "passage": "These are non-nucleated disc-like cells created from megakaryocytes that arise from the bone marrow." }
+        ]
+      }
+    ]
+  },
+  {
+    "term": "prodrug",
+    "aliases": ["prodrugs"],
+    "definition": "A prodrug is a medicine swallowed in an inactive form that the body (usually the liver) must convert before it works.",
+    "why_here": "Clopidogrel (Plavix) is a prodrug, so it depends on the liver enzyme CYP2C19 to become active.",
+    "node": "clopidogrel",
+    "requested_by": "pre-seed",
+    "date_added": "2026-10-30",
+    "claims": [
+      {
+        "id": "g-pro-1", "kind": "drug",
+        "text": "Clopidogrel is an inactive prodrug that must be converted by liver enzymes into its active form.",
+        "sources": [
+          { "ref": "dm-plavix", "passage": "Clopidogrel is a prodrug. Inhibition of platelet aggregation by clopidogrel is achieved through an active metabolite." },
+          { "ref": "sp-clopidogrel", "passage": "Clopidogrel is an inactive prodrug that requires enzymatic activation via various CYP enzymes, including the CYP2C19 and CYP3A4 enzymes, through a 2-step bioactivation process." }
+        ]
+      }
+    ]
+  }
+]

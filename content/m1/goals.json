@@ -1,0 +1,17 @@
+[
+  { "id": "m1-g01", "module": 1, "title": "List the four steps of primary hemostasis in order", "level": "recall", "kind": "standard", "prerequisites": [], "nodes": ["platelet", "endothelin", "collagen"] },
+  { "id": "m1-g02", "module": 1, "title": "Name the platelet receptor used at each step: GPIb, P2Y12, GPIIb/IIIa", "level": "recall", "kind": "standard", "prerequisites": ["m1-g01"], "nodes": ["gpib", "p2y12", "gp2b3a"] },
+  { "id": "m1-g03", "module": 1, "title": "Identify what dense and alpha granules release", "level": "recall", "kind": "standard", "prerequisites": [], "nodes": ["dense-granule", "alpha-granule", "adp", "fibrinogen"] },
+  { "id": "m1-g04", "module": 1, "title": "Explain why platelets do not stick to an intact vessel wall", "level": "explain", "kind": "misconception", "prerequisites": [], "nodes": ["endothelium", "prostacyclin"], "misconception": "Platelets are always sticky and clump anywhere in a vessel." },
+  { "id": "m1-g05", "module": 1, "title": "Explain how vWF connects a platelet to exposed collagen", "level": "explain", "kind": "standard", "prerequisites": ["m1-g02"], "nodes": ["vwf", "collagen", "gpib"] },
+  { "id": "m1-g06", "module": 1, "title": "Explain how ADP and thromboxane A2 recruit more platelets", "level": "explain", "kind": "standard", "prerequisites": ["m1-g03"], "nodes": ["adp", "txa2", "cox1", "p2y12"] },
+  { "id": "m1-g07", "module": 1, "title": "Explain how GPIIb/IIIa and fibrinogen join platelets into a plug", "level": "explain", "kind": "standard", "prerequisites": ["m1-g02"], "nodes": ["gp2b3a", "fibrinogen", "platelet-plug"] },
+  { "id": "m1-g08", "module": 1, "title": "Explain why the platelet plug is not the final clot", "level": "explain", "kind": "misconception", "prerequisites": ["m1-g07"], "nodes": ["platelet-plug"], "misconception": "The platelet plug is the finished clot." },
+  { "id": "m1-g09", "module": 1, "title": "Explain why a normal platelet count does not guarantee normal clotting", "level": "explain", "kind": "misconception", "prerequisites": ["m1-g05"], "nodes": ["platelet-count", "vwd", "vwf"], "misconception": "A normal platelet count means primary hemostasis is fine." },
+  { "id": "m1-g10", "module": 1, "title": "Predict which step aspirin blocks and how long the effect lasts", "level": "apply", "kind": "standard", "prerequisites": ["m1-g06"], "nodes": ["aspirin", "cox1", "txa2", "platelet"] },
+  { "id": "m1-g11", "module": 1, "title": "Predict which step clopidogrel, prasugrel, or ticagrelor blocks", "level": "apply", "kind": "standard", "prerequisites": ["m1-g06", "m1-g07"], "nodes": ["clopidogrel", "prasugrel", "ticagrelor", "p2y12"] },
+  { "id": "m1-g12", "module": 1, "title": "Predict the bleeding at a cut when the platelet count is very low", "level": "apply", "kind": "case", "prerequisites": ["m1-g01"], "nodes": ["platelet-count", "platelet-plug"] },
+  { "id": "m1-g13", "module": 1, "title": "Predict which step fails at a cut when vWF is missing", "level": "apply", "kind": "case", "prerequisites": ["m1-g05"], "nodes": ["vwf", "vwd", "gpib"] },
+  { "id": "m1-g14", "module": 1, "title": "Predict which step fails when platelets lack GPIIb/IIIa", "level": "apply", "kind": "case", "prerequisites": ["m1-g07"], "nodes": ["gp2b3a", "gpib"] },
+  { "id": "m1-pretest", "module": 1, "title": "Module 1 pre-test", "level": "recall", "kind": "pretest", "prerequisites": [], "nodes": [], "draws": ["m1-g01", "m1-g02", "m1-g04", "m1-g06", "m1-g08", "m1-g10", "m1-g13"] }
+]

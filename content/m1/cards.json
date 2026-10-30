@@ -1,0 +1,317 @@
+[
+  {
+    "id": "card-c-endo-1",
+    "node": "endothelium",
+    "claim": "c-endo-1",
+    "front": "Why don't platelets stick to a healthy, intact vessel wall?",
+    "back": "Platelets normally do not clump: the intact endothelium actively keeps them inactive, partly by releasing prostacyclin."
+  },
+  {
+    "id": "card-c-endo-2",
+    "node": "endothelium",
+    "claim": "c-endo-2",
+    "front": "What do platelets encounter at a break in the endothelium that triggers their activation?",
+    "back": "When the vessel lining is broken, platelets meet collagen, ADP, thrombin, and thromboxane A2, and these trigger platelet activation."
+  },
+  {
+    "id": "card-c-pgi2-1",
+    "node": "prostacyclin",
+    "claim": "c-pgi2-1",
+    "front": "What does prostacyclin do to platelets and vessels, and what does it balance against?",
+    "back": "Prostacyclin inhibits platelet aggregation and dilates vessels, the opposite of thromboxane A2; the balance between the two sets how much platelet plug forms."
+  },
+  {
+    "id": "card-c-et-1",
+    "node": "endothelin",
+    "claim": "c-et-1",
+    "front": "What is the first step of hemostasis, and what triggers it?",
+    "back": "The first response to vessel injury is vascular spasm: the vessel's smooth muscle contracts, triggered by reflex nerve signals and by endothelin released from the damaged lining, which limits blood loss."
+  },
+  {
+    "id": "card-c-et-2",
+    "node": "endothelin",
+    "claim": "c-et-2",
+    "front": "How long does vascular spasm typically last?",
+    "back": "Vascular spasm typically lasts up to about 30 minutes, though it can last for hours."
+  },
+  {
+    "id": "card-c-col-1",
+    "node": "collagen",
+    "claim": "c-col-1",
+    "front": "What becomes exposed to blood when the endothelium is damaged?",
+    "back": "Injury breaks the endothelium and exposes the collagen underneath it (subendothelial collagen) to the blood."
+  },
+  {
+    "id": "card-c-vwf-1",
+    "node": "vwf",
+    "claim": "c-vwf-1",
+    "front": "What does vWF bridge between at a wound?",
+    "back": "vWF binds to exposed collagen and becomes the anchor that platelets stick to: platelets grab vWF with their GPIb receptor."
+  },
+  {
+    "id": "card-c-vwf-2",
+    "node": "vwf",
+    "claim": "c-vwf-2",
+    "front": "Where is vWF stored before it is released?",
+    "back": "vWF is stored in endothelial cells (in Weibel-Palade bodies) and in platelet alpha granules."
+  },
+  {
+    "id": "card-c-vwf-3",
+    "node": "vwf",
+    "claim": "c-vwf-3",
+    "front": "What are vWF's two main jobs?",
+    "back": "vWF has two main jobs: it makes platelets adhere, and it carries and protects factor VIII so factor VIII is not cleared quickly from the blood."
+  },
+  {
+    "id": "card-c-vwf-4",
+    "node": "vwf",
+    "claim": "c-vwf-4",
+    "front": "Under what flow conditions does vWF grab platelets best?",
+    "back": "The vWF–GPIb grip works best under fast-flowing (high-shear) blood, as in arteries; flow stretches vWF open to expose its platelet-binding site."
+  },
+  {
+    "id": "card-c-gpib-1",
+    "node": "gpib",
+    "claim": "c-gpib-1",
+    "front": "Which platelet receptor binds vWF, and what happens when it does?",
+    "back": "GPIb is the platelet receptor for adhesion: it binds vWF, and that binding changes the platelet's shape and activates it."
+  },
+  {
+    "id": "card-c-gpib-2",
+    "node": "gpib",
+    "claim": "c-gpib-2",
+    "front": "What is missing in Bernard-Soulier syndrome, and which step fails?",
+    "back": "In Bernard-Soulier syndrome the platelet lacks GPIb, so platelets cannot adhere to vWF."
+  },
+  {
+    "id": "card-c-plt-1",
+    "node": "platelet",
+    "claim": "c-plt-1",
+    "front": "Where do platelets come from, and do they have a nucleus?",
+    "back": "Platelets are small cell fragments broken off from giant bone-marrow cells called megakaryocytes; they have no nucleus."
+  },
+  {
+    "id": "card-c-plt-2",
+    "node": "platelet",
+    "claim": "c-plt-2",
+    "front": "How long does a platelet live?",
+    "back": "A platelet lives about 7 to 10 days."
+  },
+  {
+    "id": "card-c-plt-3",
+    "node": "platelet",
+    "claim": "c-plt-3",
+    "front": "What shape change does an activated platelet undergo, and why does it help?",
+    "back": "Activated platelets change shape: from smooth discs to spheres with spiky projections, which helps them stick to each other and to the wound."
+  },
+  {
+    "id": "card-c-plt-4",
+    "node": "platelet",
+    "claim": "c-plt-4",
+    "front": "Name the four steps of primary hemostasis in order.",
+    "back": "Primary hemostasis runs in four steps: vascular spasm (vasoconstriction), platelet adhesion, platelet activation, and platelet aggregation into a plug."
+  },
+  {
+    "id": "card-c-plt-5",
+    "node": "platelet",
+    "claim": "c-plt-5",
+    "front": "How do activated platelets recruit more platelets?",
+    "back": "Activated platelets release ADP and thromboxane A2, which activate nearby platelets: a positive feedback loop that recruits more and more platelets to the wound."
+  },
+  {
+    "id": "card-c-dg-1",
+    "node": "dense-granule",
+    "claim": "c-dg-1",
+    "front": "What do platelet dense granules contain?",
+    "back": "Dense granules are small platelet storage sacs holding small molecules: ADP, serotonin, and calcium."
+  },
+  {
+    "id": "card-c-dg-2",
+    "node": "dense-granule",
+    "claim": "c-dg-2",
+    "front": "What does serotonin released from platelets do at the wound?",
+    "back": "Serotonin released by platelets helps keep the vessel constricted."
+  },
+  {
+    "id": "card-c-ag-1",
+    "node": "alpha-granule",
+    "claim": "c-ag-1",
+    "front": "What do platelet alpha granules contain?",
+    "back": "Alpha granules are the largest and most numerous platelet granules and hold proteins, including vWF and fibrinogen."
+  },
+  {
+    "id": "card-c-adp-1",
+    "node": "adp",
+    "claim": "c-adp-1",
+    "front": "What does ADP bind on platelets, and what does that switch on?",
+    "back": "ADP released from dense granules binds the P2Y12 (and P2Y1) receptors on platelets, which switches on the GPIIb/IIIa receptor so platelets can aggregate."
+  },
+  {
+    "id": "card-c-adp-2",
+    "node": "adp",
+    "claim": "c-adp-2",
+    "front": "What does ADP do for the growing platelet plug?",
+    "back": "ADP helps more platelets stick to the injury site, reinforcing and expanding the platelet plug."
+  },
+  {
+    "id": "card-c-p2y12-1",
+    "node": "p2y12",
+    "claim": "c-p2y12-1",
+    "front": "What happens downstream when P2Y12 is blocked?",
+    "back": "P2Y12 is an ADP receptor on the platelet surface. When ADP binds it, the platelet activates its GPIIb/IIIa receptor; block P2Y12 and that ADP signal is lost, so aggregation drops."
+  },
+  {
+    "id": "card-c-cox-1",
+    "node": "cox1",
+    "claim": "c-cox-1",
+    "front": "Which platelet enzyme starts the making of thromboxane A2, and from what?",
+    "back": "COX-1 is the enzyme platelets use to make thromboxane A2: it converts arachidonic acid (from the cell membrane) toward TXA2. COX-1 is always present in platelets."
+  },
+  {
+    "id": "card-c-cox-2",
+    "node": "cox1",
+    "claim": "c-cox-2",
+    "front": "Why can't a platelet replace a permanently blocked COX-1?",
+    "back": "Platelets have no nucleus, so they cannot make new COX enzyme. If COX-1 is permanently disabled, that platelet stays unable to make TXA2 for the rest of its life."
+  },
+  {
+    "id": "card-c-txa2-1",
+    "node": "txa2",
+    "claim": "c-txa2-1",
+    "front": "What does TXA2 do to nearby platelets?",
+    "back": "TXA2 is a positive-feedback signal: an activated platelet releases it, and it activates neighboring platelets, which make more TXA2."
+  },
+  {
+    "id": "card-c-txa2-2",
+    "node": "txa2",
+    "claim": "c-txa2-2",
+    "front": "Besides activating platelets, what does TXA2 do to blood vessels?",
+    "back": "TXA2 also constricts blood vessels."
+  },
+  {
+    "id": "card-c-fgn-1",
+    "node": "fibrinogen",
+    "claim": "c-fgn-1",
+    "front": "In the platelet plug, what links one platelet's GPIIb/IIIa to another's?",
+    "back": "In the platelet plug, fibrinogen is the bridge: one fibrinogen molecule binds GPIIb/IIIa receptors on two different platelets, linking them together."
+  },
+  {
+    "id": "card-c-gp2-1",
+    "node": "gp2b3a",
+    "claim": "c-gp2-1",
+    "front": "Which platelet receptor does aggregation, and what does it bind?",
+    "back": "GPIIb/IIIa is the platelet receptor for aggregation. It only grips once the platelet is activated; then it binds fibrinogen (and vWF), cross-linking platelets into a clump."
+  },
+  {
+    "id": "card-c-gp2-2",
+    "node": "gp2b3a",
+    "claim": "c-gp2-2",
+    "front": "Which comes first: GPIb adhesion or GPIIb/IIIa aggregation?",
+    "back": "Adhesion comes first and aggregation second: GPIIb/IIIa engages after platelets have already stuck to vWF through GPIb."
+  },
+  {
+    "id": "card-c-gp2-3",
+    "node": "gp2b3a",
+    "claim": "c-gp2-3",
+    "front": "What is missing in Glanzmann thrombasthenia, and which step fails?",
+    "back": "In Glanzmann thrombasthenia the platelet lacks GPIIb/IIIa, so platelets cannot clump (aggregate)."
+  },
+  {
+    "id": "card-c-plug-1",
+    "node": "platelet-plug",
+    "claim": "c-plug-1",
+    "front": "Is the platelet plug the final clot? What reinforces it?",
+    "back": "The platelet plug is temporary. It seals a small hole and buys time; the coagulation cascade then reinforces it with fibrin to make the durable clot."
+  },
+  {
+    "id": "card-c-plug-2",
+    "node": "platelet-plug",
+    "claim": "c-plug-2",
+    "front": "What bleeding pattern points to a platelet (primary hemostasis) problem?",
+    "back": "Problems with primary hemostasis (too few platelets or platelets that don't work) typically cause skin and mucosal bleeding: petechiae, purpura, bruising, nosebleeds, gum bleeding."
+  },
+  {
+    "id": "card-c-pc-1",
+    "node": "platelet-count",
+    "claim": "c-pc-1",
+    "front": "Below what platelet count is thrombocytopenia?",
+    "back": "A normal adult platelet count starts at 150,000/µL; below that is thrombocytopenia."
+  },
+  {
+    "id": "card-c-pc-2",
+    "node": "platelet-count",
+    "claim": "c-pc-2",
+    "front": "Roughly at what platelet count does spontaneous bleeding become a concern?",
+    "back": "Bleeding risk rises as the count falls: mild drops (100,000–150,000) usually cause no symptoms, while very low counts (under about 10,000–20,000) can bleed spontaneously."
+  },
+  {
+    "id": "card-c-pc-3",
+    "node": "platelet-count",
+    "claim": "c-pc-3",
+    "front": "In von Willebrand disease, what is the platelet count usually, and why do patients still bleed?",
+    "back": "A normal platelet count does not prove platelets work: in von Willebrand disease the count is typically normal, yet platelets can't adhere properly."
+  },
+  {
+    "id": "card-c-vwd-1",
+    "node": "vwd",
+    "claim": "c-vwd-1",
+    "front": "What is von Willebrand disease, and how does it usually show up?",
+    "back": "von Willebrand disease is the most common inherited bleeding disorder: too little or poorly working vWF, so platelets don't adhere well. It typically shows as easy bruising, nosebleeds, gum bleeding, and heavy periods."
+  },
+  {
+    "id": "card-c-vwd-2",
+    "node": "vwd",
+    "claim": "c-vwd-2",
+    "front": "Why can some von Willebrand disease resemble hemophilia A?",
+    "back": "Because vWF carries factor VIII, low vWF can also lower factor VIII, so some vWD can look like hemophilia A."
+  },
+  {
+    "id": "card-c-asa-1",
+    "node": "aspirin",
+    "claim": "c-asa-1",
+    "front": "What does aspirin block, and what is the result for platelets?",
+    "back": "Aspirin irreversibly blocks COX-1 in platelets, so they cannot make thromboxane A2 and aggregate less."
+  },
+  {
+    "id": "card-c-asa-2",
+    "node": "aspirin",
+    "claim": "c-asa-2",
+    "front": "How long does aspirin's antiplatelet effect last, and why?",
+    "back": "Aspirin's antiplatelet effect lasts about 7 to 10 days, the platelet's lifespan, because blocked platelets can't make new COX-1; function returns only as new platelets are made."
+  },
+  {
+    "id": "card-c-clop-1",
+    "node": "clopidogrel",
+    "claim": "c-clop-1",
+    "front": "Clopidogrel (Plavix): what does it block, and is the block reversible?",
+    "back": "Clopidogrel (Plavix) irreversibly blocks the P2Y12 ADP receptor, so ADP can't switch on GPIIb/IIIa and platelets aggregate less."
+  },
+  {
+    "id": "card-c-clop-2",
+    "node": "clopidogrel",
+    "claim": "c-clop-2",
+    "front": "Why does clopidogrel depend on the liver enzyme CYP2C19?",
+    "back": "Clopidogrel is a prodrug: the liver (mainly the CYP2C19 enzyme) must convert it to its active form."
+  },
+  {
+    "id": "card-c-clop-3",
+    "node": "clopidogrel",
+    "claim": "c-clop-3",
+    "front": "How long does clopidogrel's antiplatelet effect last after the last dose?",
+    "back": "Clopidogrel's block lasts for the life of the affected platelets (7–10 days); platelet function recovers gradually as new platelets are made, often within about 5 days."
+  },
+  {
+    "id": "card-c-pras-1",
+    "node": "prasugrel",
+    "claim": "c-pras-1",
+    "front": "Prasugrel (Effient): what does it block, and how long does the effect last?",
+    "back": "Prasugrel (Effient) is a prodrug whose active form irreversibly blocks P2Y12; the block lasts for the life of the platelet."
+  },
+  {
+    "id": "card-c-tica-1",
+    "node": "ticagrelor",
+    "claim": "c-tica-1",
+    "front": "Ticagrelor (Brilinta): how is its P2Y12 block different from clopidogrel's?",
+    "back": "Ticagrelor (Brilinta) also blocks P2Y12, but reversibly, unlike clopidogrel and prasugrel. It does not need liver activation to work."
+  }
+]

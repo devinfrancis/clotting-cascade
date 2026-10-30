@@ -1,0 +1,21 @@
+[
+  { "id": "sp-hemostasis", "title": "LaPelusa A, Dave HD. Physiology, Hemostasis. StatPearls (NCBI Bookshelf), updated May 1, 2023", "url": "https://www.ncbi.nlm.nih.gov/books/NBK545263/", "accessed": "2026-10-30", "method": "browser" },
+  { "id": "sp-platelet-activation", "title": "Physiology, Platelet Activation (Archived). StatPearls (NCBI Bookshelf)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK482478/", "accessed": "2026-10-30", "method": "browser" },
+  { "id": "sp-vwf", "title": "Physiology, Von Willebrand Factor. StatPearls (NCBI Bookshelf)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK559062/", "accessed": "2026-10-30", "method": "browser" },
+  { "id": "sp-txa2", "title": "Physiology, Thromboxane A2. StatPearls (NCBI Bookshelf)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK539817/", "accessed": "2026-10-30", "method": "browser" },
+  { "id": "sp-histology-platelets", "title": "Histology, Platelets. StatPearls (NCBI Bookshelf)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK557800/", "accessed": "2026-10-30", "method": "browser" },
+  { "id": "sp-aspirin", "title": "Salicylic Acid (Aspirin). StatPearls (NCBI Bookshelf)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK519032/", "accessed": "2026-10-30", "method": "browser" },
+  { "id": "sp-clopidogrel", "title": "Clopidogrel. StatPearls (NCBI Bookshelf)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK470539/", "accessed": "2026-10-30", "method": "browser" },
+  { "id": "sp-thrombocytopenia", "title": "Thrombocytopenia. StatPearls (NCBI Bookshelf)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK542208/", "accessed": "2026-10-30", "method": "browser" },
+  { "id": "sp-vwd", "title": "Von Willebrand Disease. StatPearls (NCBI Bookshelf)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK459222/", "accessed": "2026-10-30", "method": "browser" },
+  { "id": "sp-clotting-factors", "title": "Biochemistry, Clotting Factors. StatPearls (NCBI Bookshelf)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK507850/", "accessed": "2026-10-30", "method": "browser" },
+  { "id": "sp-coag-pathways", "title": "Physiology, Coagulation Pathways. StatPearls (NCBI Bookshelf)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK482253/", "accessed": "2026-10-30", "method": "browser" },
+  { "id": "openstax-hemostasis", "title": "OpenStax Anatomy and Physiology 2e, 18.5 Hemostasis", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/18-5-hemostasis", "accessed": "2026-10-30", "method": "script" },
+  { "id": "openstax-bio-enzymes", "title": "OpenStax Biology 2e, 6.5 Enzymes", "url": "https://openstax.org/books/biology-2e/pages/6-5-enzymes", "accessed": "2026-10-30", "method": "script" },
+  { "id": "pmc-vwf-platelets", "title": "Of von Willebrand factor and platelets. Cell Mol Life Sci (PMC4284388)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4284388/", "accessed": "2026-10-30", "method": "script" },
+  { "id": "pmc-p2y12-review", "title": "Comparative Review of Oral P2Y12 Inhibitors. P T (PMC5969212)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5969212/", "accessed": "2026-10-30", "method": "browser" },
+  { "id": "pmc-vitk-cycle", "title": "Structural and functional insights into enzymes of the vitamin K cycle (PMC5073812)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5073812/", "accessed": "2026-10-30", "method": "browser" },
+  { "id": "dm-plavix", "title": "PLAVIX (clopidogrel) prescribing information. DailyMed", "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=de8b0b67-eb25-4684-83b5-7ad785314227", "accessed": "2026-10-30", "method": "script" },
+  { "id": "dm-brilinta", "title": "BRILINTA (ticagrelor) prescribing information. DailyMed", "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f7b3f443-e83d-4bf2-0e96-023448fed9a8", "accessed": "2026-10-30", "method": "script" },
+  { "id": "dm-effient", "title": "EFFIENT (prasugrel) prescribing information. DailyMed", "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=69ea2d58-5353-4222-b61f-cab976fa7e5e", "accessed": "2026-10-30", "method": "script" }
+]

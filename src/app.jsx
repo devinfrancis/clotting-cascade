@@ -37,7 +37,6 @@ export function App() {
       <main class="content">
         <InstallGuide />
         <Screen />
-        <p class="disclaimer">Study tool, not a clinical reference. Local and state protocol always wins.</p>
       </main>
       <nav class="tabs">
         {SCREENS.map((s) => (

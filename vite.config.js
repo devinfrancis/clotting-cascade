@@ -15,7 +15,7 @@ export default defineConfig({
       manifest: {
         name: 'Clotting Cascade',
         short_name: 'Cascade',
-        description: 'Study tool for the clotting cascade. Not a clinical reference.',
+        description: 'Study tool for the clotting cascade.',
         start_url: base,
         scope: base,
         display: 'standalone',
