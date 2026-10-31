@@ -36,3 +36,22 @@ Nothing blocking. Three decisions are yours to overrule:
 ## Glossary taps
 
 The app logs every glossary tap. No usage data exists yet; terms tapped 3+ times will be listed here after your first export.
+
+## Lesson (added 2026-10-30)
+
+Devin pointed out that Module 1 had only flashcards and node cards and no actual teaching. I added a 10-section guided lesson (`content/m1/lesson.json`). Every paragraph cites the reviewed claims it rests on, and a build test fails if a paragraph cites no claim or a claim that doesn't exist.
+
+| | Count |
+|---|---|
+| Paragraphs reviewed | 33 (plus 10 section "problem" lines) |
+| Blocking flags | 4 factual errors and 5 citation problems (R1 and R3 combined) |
+| Style flags | 9 from R2, 6 from R1 and R3 |
+| Fixed and re-checked by the reviewer who raised them | all blocking items approved on re-check |
+
+The one item still open after re-check, m1-l09#2, was a true but unsourced clause ("the plug at any cut is weak"). I removed it rather than ship it unsourced.
+
+What the lesson review caught that matters:
+
+- **Plavix/Effient durations.** The first draft never said each blocked platelet stays blocked for its whole life, and it gave the label's "about 5 days" as if it were a limit. Together that could make Plavix seem to wear off faster than aspirin.
+- **The bleeding pattern.** Skin and mucosal bleeding is *typical* of platelet problems, not a signature, and the same signs have other causes.
+- **"Platelets only clot at a break."** This was an overstatement; it now reads "normally".

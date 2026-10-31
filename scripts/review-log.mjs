@@ -29,5 +29,14 @@ for (const [name, label] of [['r1b', 'R1 re-review'], ['r2b', 'R2 re-review'], [
     md += `| ${label} | ${cell(x.item)} | ${x.verdict} | ${cell(x.detail).slice(0, 400)} |\n`;
   }
 }
+md += '\n## Lesson review (content/m1/lesson.json)\n\n| Reviewer | Item | Verdict | Detail |\n|---|---|---|---|\n';
+for (const [name, label] of [['l1', 'R1 physiology professor'], ['l2', 'R2 EMT instructor'], ['l3', 'R3 emergency physician']]) {
+  for (const x of L(name)) {
+    if (x.verdict === 'approve') continue;
+    md += `| ${label} | ${cell(x.item)} | ${x.verdict} | ${cell(x.detail).slice(0, 400)} |\n`;
+  }
+}
+md += '\n### Lesson re-check of fixes\n\n| Reviewer | Item | Verdict | Detail |\n|---|---|---|---|\n';
+for (const x of L('l-recheck')) md += `| ${x.reviewer} | ${cell(x.item)} | ${x.verdict} | ${cell(x.detail).slice(0, 300)} |\n`;
 writeFileSync('content/review-log.md', md);
 console.log('review-log.md written');

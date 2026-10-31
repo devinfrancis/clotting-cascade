@@ -1,0 +1,61 @@
+[
+  {
+    "item": "m1-l01.problem",
+    "verdict": "style",
+    "detail": "The problem asks 'first, second, and third', but paragraph #2 then lists four steps. A careful learner will notice the mismatch, and goal m1-g01 is 'list the four steps in order'.",
+    "suggestion": "A blood vessel has a hole in it. What does the body do, and in what order?"
+  },
+  {
+    "item": "m1-l01#3",
+    "verdict": "style",
+    "detail": "It promises that 'no nucleus' will matter for aspirin, but m1-l10#2 never ties it back. It says only that a platelet can't make new COX-1 and doesn't give the reason. The setup is never paid off.",
+    "suggestion": "In m1-l10#2, start with: 'A platelet has no nucleus, so it can't make new COX-1...'"
+  },
+  {
+    "item": "m1-l02#2",
+    "verdict": "style",
+    "detail": "Thromboxane A2 appears here with no hint of what it is or does beyond 'pushes the other way'. The learner first meets it as half of a balance, and it isn't explained until l06. That is fine for a preview, but it reads as a cold drop-in.",
+    "suggestion": "Platelets also make an opposing signal, thromboxane A2, which switches platelets on (more on it in Calling for backup)."
+  },
+  {
+    "item": "m1-l04#2",
+    "verdict": "style",
+    "detail": "Three problems. (1) It doesn't say what vWF is. 'The anchor' gives its job but not that it's a large sticky protein carried in the blood plasma. (2) It doesn't answer the section's own problem of why platelets that are rushing past can't simply grab collagen directly. The reason is that in fast-flowing blood they need vWF as a tether. (3) 'Receptor' is defined after it is used. GPIb is never decoded: the glossary has 'glycoprotein', but 'GPIb' is not an alias, so the GP abbreviation is unexplained here.",
+    "suggestion": "Von Willebrand factor (vWF) is a large, sticky protein carried in the blood. In fast-moving blood, platelets can't hold on to collagen by themselves, so vWF acts as the anchor: it binds the exposed collagen, and platelets grab it. A receptor is a protein on a cell's surface that grabs one specific molecule; the platelet's vWF receptor is called GPIb (GP = glycoprotein)."
+  },
+  {
+    "item": "m1-l05#3",
+    "verdict": "style",
+    "detail": "It lists what each granule holds but never says why the platelet releases it, so the section's 'what does it do next' question gets only half an answer. ADP also appears for the first time with no explanation and no glossary entry. It has only a node card, and an EMT-B knows ATP at best. Goal m1-g03 is recall, so it is still covered.",
+    "suggestion": "Add a sentence on purpose: 'ADP calls in more platelets, serotonin keeps the vessel clamped, calcium is needed by clotting factors, and vWF and fibrinogen are extra glue for sticking and clumping.' Gloss ADP on first use: 'ADP (a small molecule related to the cell's energy molecule ATP, used here as a signal)'."
+  },
+  {
+    "item": "m1-l07#2",
+    "verdict": "style",
+    "detail": "'Fibrinogen is the bridge', but it never says where fibrinogen comes from. It is a protein always floating in plasma, with more released from alpha granules (l05#3). Without that, the learner has no picture of the bridge being present at the wound.",
+    "suggestion": "Fibrinogen, a protein always present in plasma (and released from alpha granules), is the bridge."
+  },
+  {
+    "item": "m1-l08#3",
+    "verdict": "style",
+    "detail": "Claim g-ca-1 (calcium as a bridge) is cited, but calcium never appears in the text. This was a natural chance to pay off the calcium listed in the dense granules (l05#3).",
+    "suggestion": "Activated platelets are the surface where clotting factors gather, helped by the calcium they release, so the plug and the fibrin clot are built together."
+  },
+  {
+    "item": "m1-l09#1",
+    "verdict": "style",
+    "detail": "Petechiae gets a plain explanation right where it appears, but purpura doesn't. It is glossary-linked, but the two are listed side by side and one is explained while the other isn't. EMT-Bs often blur the two.",
+    "suggestion": "petechiae (pinpoint red spots), purpura (larger purple patches), easy bruising..."
+  },
+  {
+    "item": "m1-l09#2",
+    "verdict": "style",
+    "detail": "Goal m1-g12 asks the learner to predict bleeding at a cut when the count is very low. The text covers bleeding with no injury but never states the at-the-cut consequence (prolonged oozing because no plug can form), which q24 tests.",
+    "suggestion": "Add: 'At a cut, too few platelets means no good plug, so it keeps oozing.'"
+  },
+  {
+    "item": "overall",
+    "verdict": "style",
+    "detail": "This is a strong, well-pitched lesson for an EMT-B. Every section opens with a real problem and the ten sections read as one story: keep quiet, clamp, stick, switch on, recruit, lock, temporary, failures, drugs. No factual errors were found, and the drug durations (aspirin 7-10 days by platelet lifespan, clopidogrel ~5 days, prasugrel 5-9 days, ticagrelor ~5 days despite being reversible) are correct. Goals m1-g01 through m1-g14 are all reachable from this lesson alone, including m1-g09 (l09#3), m1-g11 (l10#3-4) and m1-g14 (l09#4). The weakest spots are: m1-g12 (no explicit at-the-cut prediction); m1-l04 not answering its own 'why an anchor?' question and leaving vWF/GPIb undecoded; granule contents given without their purpose; and two setups (no nucleus, calcium) that are never paid off. ADP is the one notable term with no glossary entry or inline explanation."
+  }
+]

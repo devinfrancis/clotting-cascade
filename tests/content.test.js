@@ -159,3 +159,24 @@ describe('content integrity', () => {
     }
   });
 });
+
+describe('lessons', () => {
+  const lessons = read('lesson');
+  it('every lesson paragraph rests on reviewed claims that exist', () => {
+    for (const l of lessons) for (const p of l.paragraphs) {
+      expect([l.id, p.claims.length > 0]).toEqual([l.id, true]);
+      expect([l.id, p.claims.filter((c) => !claimIds.has(c))]).toEqual([l.id, []]);
+    }
+  });
+  it('lesson sections point at real nodes and goals, and glossary refs resolve', () => {
+    for (const l of lessons) {
+      expect([l.id, l.nodes.filter((n) => !nodeIds.has(n))]).toEqual([l.id, []]);
+      expect([l.id, goalIds.has(l.goal)]).toEqual([l.id, true]);
+      const missing = l.paragraphs.flatMap((p) => glossaryRefs(p.text)).filter((t) => !glossaryKeys.has(t.toLowerCase()));
+      expect([l.id, missing]).toEqual([l.id, []]);
+    }
+  });
+  it('every module with goals has a lesson', () => {
+    for (const m of new Set(goals.map((g) => g.module))) expect([m, lessons.some((l) => l.module === m)]).toEqual([m, true]);
+  });
+});

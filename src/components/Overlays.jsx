@@ -87,7 +87,7 @@ function NodeCard({ id }) {
           <li key={g.id}>{g.title} <span class="state">{STATE_LABEL[states[g.id]] || ''}</span></li>
         ))}
       </ul>
-      <button class="link" onClick={() => go(`#/learn/${id}`)}>Show on diagram</button>
+      <button class="link" onClick={() => go(`#/learn/map/${id}`)}>Show on diagram</button>
     </div>
   );
 }

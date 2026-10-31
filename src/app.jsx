@@ -35,7 +35,7 @@ export function App() {
   let screen;
   const [a, b, c] = r.parts;
   switch (r.screen) {
-    case 'learn': screen = <Learn param={a} />; break;
+    case 'learn': screen = <Learn param={a} sub={b} />; break;
     case 'study': screen = <Study param={a} sub={b} />; break;
     case 'settings': screen = <Settings />; break;
     case 'flash': screen = <Flashcards />; break;

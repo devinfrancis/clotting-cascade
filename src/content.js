@@ -36,8 +36,11 @@ export const goalById = Object.fromEntries(goals.map((g) => [g.id, g]));
 export const questionById = Object.fromEntries(questions.map((q) => [q.id, q]));
 export const cardById = Object.fromEntries(cards.map((c) => [c.id, c]));
 
+export const lessons = collect('lesson');
+
 export const claimById = {};
 for (const n of nodes) for (const c of n.claims) claimById[c.id] = { ...c, node: n.id };
+for (const g of glossary) for (const c of g.claims) claimById[c.id] = { ...c, node: g.node, term: g.term };
 
 export const modules = [...new Set(goals.map((g) => g.module))].sort((a, b) => a - b).map((m) => ({
   id: m,

@@ -6,6 +6,7 @@ import { isShiftDay, setShiftDay, getMeta, setMeta } from '../store.js';
 import { daysBetween, dayKey } from '../day.js';
 import { go, progressChanged, useProgressVersion } from '../ui.js';
 import { doExport } from '../backup.js';
+import { lessonProgress } from './Lesson.jsx';
 
 export function Home() {
   const v = useProgressVersion();
@@ -27,7 +28,8 @@ export function Home() {
         rechecks: await rechecksDue(),
         shift: await isShiftDay(),
         backupDue: since && daysBetween(dayKey(new Date(since)), dayKey()) >= 7,
-        offerExport: await getMeta('offerExport')
+        offerExport: await getMeta('offerExport'),
+        lesson: await firstUnfinishedLesson()
       });
     })();
   }, [v]);
@@ -61,6 +63,14 @@ export function Home() {
           <span>No backup in 7+ days.</span>
           <button onClick={async () => { await doExport(); progressChanged(); }}>Export now</button>
         </div>
+      )}
+
+      {d.lesson && (
+        <button class="card lesson-cta" onClick={() => go(`#/learn/lesson/${(d.lesson.next || d.lesson.first).id}`)}>
+          <span class="eyebrow">{d.lesson.read === 0 ? 'Start here' : 'Continue the lesson'}</span>
+          <b>{d.lesson.read === 0 ? `Module ${d.lesson.module}: ${d.lesson.title}` : d.lesson.next.title}</b>
+          <span class="small muted">{d.lesson.read} of {d.lesson.total} sections read · about 2 minutes each</span>
+        </button>
       )}
 
       <div class="counters">
@@ -99,6 +109,15 @@ export function Home() {
       })}
     </section>
   );
+}
+
+// The first module whose lesson isn't fully read yet.
+async function firstUnfinishedLesson() {
+  for (const m of modules) {
+    const p = await lessonProgress(m.id);
+    if (p.total && p.next) return { ...p, module: m.id, title: m.title };
+  }
+  return null;
 }
 
 function ModuleGoals({ m, states }) {

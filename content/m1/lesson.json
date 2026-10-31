@@ -1,0 +1,385 @@
+[
+  {
+    "id": "m1-l01",
+    "module": 1,
+    "title": "The job: stop a leak",
+    "problem": "A blood vessel has a hole in it. What does the body do, in order, to stop the leak?",
+    "nodes": [
+      "platelet",
+      "platelet-plug"
+    ],
+    "paragraphs": [
+      {
+        "text": "Hemostasis is the body stopping a bleed. This module covers the first half, primary hemostasis: building a quick, temporary plug out of platelets.",
+        "claims": [
+          "g-hem-1",
+          "c-plug-1"
+        ]
+      },
+      {
+        "text": "It happens in four steps. The vessel clamps down (vascular spasm). Platelets stick to the wound (adhesion). They switch on (activation). Then they clump together into a plug (aggregation).",
+        "claims": [
+          "c-plt-4"
+        ]
+      },
+      {
+        "text": "Platelets are small fragments that break off giant bone-marrow cells called megakaryocytes. They have no nucleus, and each one lives about 7 to 10 days. Both facts matter later, when we get to aspirin.",
+        "claims": [
+          "c-plt-1",
+          "c-plt-2"
+        ]
+      }
+    ],
+    "goal": "m1-g01"
+  },
+  {
+    "id": "m1-l02",
+    "module": 1,
+    "title": "Before the cut: keep platelets quiet",
+    "problem": "Platelets touch the vessel wall all the time. Why don't they clot every vessel shut?",
+    "nodes": [
+      "endothelium",
+      "prostacyclin"
+    ],
+    "paragraphs": [
+      {
+        "text": "The inside of every vessel is lined with a single layer of cells, the endothelium. While it's intact, it actively keeps passing platelets switched off.",
+        "claims": [
+          "g-endo-1",
+          "c-endo-1"
+        ]
+      },
+      {
+        "text": "One of its tools is prostacyclin, a signal that stops platelets from activating and clumping. Platelets themselves make a signal that pushes the other way, thromboxane A2. The balance between the two sets how big a plug gets.",
+        "claims": [
+          "c-endo-1",
+          "c-pgi2-1",
+          "c-txa2-1"
+        ]
+      },
+      {
+        "text": "Normally, a break in the lining is what starts a clot.",
+        "claims": [
+          "c-endo-1",
+          "c-endo-2"
+        ]
+      }
+    ],
+    "goal": "m1-g04"
+  },
+  {
+    "id": "m1-l03",
+    "module": 1,
+    "title": "Step 1: clamp the vessel",
+    "problem": "Blood is pouring out. What's the fastest thing that can reduce it, before any plug exists?",
+    "nodes": [
+      "endothelin"
+    ],
+    "paragraphs": [
+      {
+        "text": "The first response is vascular spasm. The smooth muscle in the vessel wall contracts and narrows the vessel, which limits blood loss.",
+        "claims": [
+          "c-et-1"
+        ]
+      },
+      {
+        "text": "Reflex nerve signals and a chemical called endothelin, released by the damaged lining, trigger the spasm. Once platelets arrive, their serotonin and thromboxane A2 help keep the vessel tight.",
+        "claims": [
+          "c-et-1",
+          "c-dg-2",
+          "c-txa2-2"
+        ]
+      }
+    ],
+    "goal": "m1-g01"
+  },
+  {
+    "id": "m1-l04",
+    "module": 1,
+    "title": "Step 2: stick to the wound (adhesion)",
+    "problem": "Platelets are rushing past. How do they find the hole and hold on?",
+    "nodes": [
+      "collagen",
+      "vwf",
+      "gpib"
+    ],
+    "paragraphs": [
+      {
+        "text": "Under the endothelium is a layer rich in collagen. When the lining breaks, that collagen is exposed to the blood. This is the signal that says \"the wall is broken here.\"",
+        "claims": [
+          "c-col-1",
+          "g-sub-1"
+        ]
+      },
+      {
+        "text": "Platelets need something to hold on to. Von Willebrand factor (vWF), a protein in the blood, is the anchor. It binds to the exposed collagen, and platelets grab it using a receptor on their surface called GPIb. A receptor is a protein that selectively binds a specific molecule, and that binding triggers a response inside the cell. The \"GP\" in GPIb stands for glycoprotein.",
+        "claims": [
+          "c-vwf-1",
+          "c-gpib-1",
+          "g-rec-1",
+          "g-gp-1"
+        ]
+      },
+      {
+        "text": "vWF is kept ready in storage packets inside endothelial cells and inside platelets, so more can be released at the wound.",
+        "claims": [
+          "c-vwf-2"
+        ]
+      },
+      {
+        "text": "The main chain from wall to platelet: collagen, then vWF, then GPIb.",
+        "claims": [
+          "c-vwf-1",
+          "c-gpib-1"
+        ]
+      }
+    ],
+    "goal": "m1-g05"
+  },
+  {
+    "id": "m1-l05",
+    "module": 1,
+    "title": "Step 3: switch on (activation)",
+    "problem": "A platelet is stuck to the wound. One platelet can't plug a hole, so what does it do next?",
+    "nodes": [
+      "platelet",
+      "dense-granule",
+      "alpha-granule"
+    ],
+    "paragraphs": [
+      {
+        "text": "Grabbing vWF helps switch the platelet on. Exposed collagen and signals from other platelets switch it on too.",
+        "claims": [
+          "c-gpib-1",
+          "c-endo-2"
+        ]
+      },
+      {
+        "text": "An activated platelet changes shape, from a smooth disc to a sphere with spiky projections. That makes it much better at sticking to the wound and to other platelets.",
+        "claims": [
+          "c-plt-3"
+        ]
+      },
+      {
+        "text": "It also releases the contents of its granules, small storage packets inside it. Dense granules hold small molecules: ADP (a recruiting signal, next section), serotonin (helps keep the vessel narrowed), and calcium (helps clotting factors attach to platelets). Alpha granules hold proteins, including more vWF (more anchor) and fibrinogen (the bridge in step 4).",
+        "claims": [
+          "g-act-1",
+          "c-dg-1",
+          "c-ag-1",
+          "c-adp-2",
+          "c-dg-2",
+          "g-ca-1",
+          "c-gpib-1",
+          "c-fgn-1"
+        ]
+      }
+    ],
+    "goal": "m1-g03"
+  },
+  {
+    "id": "m1-l06",
+    "module": 1,
+    "title": "Calling for backup: ADP and thromboxane A2",
+    "problem": "A few platelets are stuck. How do they recruit enough others to fill the hole?",
+    "nodes": [
+      "adp",
+      "p2y12",
+      "cox1",
+      "txa2"
+    ],
+    "paragraphs": [
+      {
+        "text": "Activated platelets send out two recruiting signals, ADP and thromboxane A2. Both activate nearby platelets, which then send out more of the same. It's a loop that builds on itself (positive feedback), so the pile of platelets grows fast.",
+        "claims": [
+          "c-plt-5",
+          "c-txa2-1"
+        ]
+      },
+      {
+        "text": "ADP comes from the dense granules. It binds a receptor on other platelets called P2Y12, and that switches on their GPIIb/IIIa receptor, the one used for clumping in the next step.",
+        "claims": [
+          "c-adp-1",
+          "c-p2y12-1"
+        ]
+      },
+      {
+        "text": "Thromboxane A2 is made by the activated platelet itself, using an enzyme called COX-1, which is always present in platelets.",
+        "claims": [
+          "c-cox-1",
+          "c-txa2-1"
+        ]
+      },
+      {
+        "text": "Keep these two signals in mind: aspirin blocks the COX-1 route, and Plavix, Effient, and Brilinta block the P2Y12 route.",
+        "claims": [
+          "c-asa-1",
+          "c-clop-1",
+          "c-pras-1",
+          "c-tica-1"
+        ]
+      }
+    ],
+    "goal": "m1-g06"
+  },
+  {
+    "id": "m1-l07",
+    "module": 1,
+    "title": "Step 4: lock together (aggregation)",
+    "problem": "Activated platelets are piling up. What actually holds them to each other?",
+    "nodes": [
+      "gp2b3a",
+      "fibrinogen",
+      "platelet-plug"
+    ],
+    "paragraphs": [
+      {
+        "text": "GPIIb/IIIa is the platelet's clumping (aggregation) receptor. On a resting platelet it doesn't grip. Once the platelet is activated, it does.",
+        "claims": [
+          "c-gp2-1"
+        ]
+      },
+      {
+        "text": "Fibrinogen, a protein carried in the blood and also released from alpha granules, is the bridge. One fibrinogen molecule binds a GPIIb/IIIa receptor on two different platelets at once and ties them together. Repeat that across many platelets and you have a plug.",
+        "claims": [
+          "c-fgn-1",
+          "c-gp2-1",
+          "g-fib-1",
+          "c-ag-1"
+        ]
+      },
+      {
+        "text": "Keep the two receptors straight. GPIb's main job is the first grip on the wound (adhesion). GPIIb/IIIa's main job is linking platelets to each other (aggregation), and it engages second.",
+        "claims": [
+          "c-gp2-2",
+          "g-adag-1",
+          "c-gpib-1"
+        ]
+      }
+    ],
+    "goal": "m1-g07"
+  },
+  {
+    "id": "m1-l08",
+    "module": 1,
+    "title": "A temporary seal",
+    "problem": "The platelet plug is in. Is the job done?",
+    "nodes": [
+      "platelet-plug"
+    ],
+    "paragraphs": [
+      {
+        "text": "No. The platelet plug seals a small hole only temporarily. It buys time.",
+        "claims": [
+          "c-plug-1"
+        ]
+      },
+      {
+        "text": "The durable clot comes from the coagulation cascade (secondary hemostasis, Module 2). It lays down fibrin, a tough thread-like protein made from fibrinogen, that meshes through the plug and traps platelets and blood cells.",
+        "claims": [
+          "c-plug-1",
+          "g-fib-1",
+          "g-hem-1"
+        ]
+      },
+      {
+        "text": "In a real wound the two halves overlap. Activated platelets are the surface where clotting factors gather, held there partly by calcium, so the plug and the fibrin clot are built together.",
+        "claims": [
+          "c-plug-1",
+          "g-ca-1"
+        ]
+      }
+    ],
+    "goal": "m1-g08"
+  },
+  {
+    "id": "m1-l09",
+    "module": 1,
+    "title": "When it fails",
+    "problem": "What does it look like when one of these steps breaks?",
+    "nodes": [
+      "platelet-count",
+      "vwd",
+      "gpib",
+      "gp2b3a"
+    ],
+    "paragraphs": [
+      {
+        "text": "Platelet problems typically show up as bleeding into the skin and the moist linings of the body: petechiae (pinpoint red dots that don't fade when pressed), purpura (larger spots), easy bruising, nosebleeds, and bleeding gums. These signs can have other causes too.",
+        "claims": [
+          "c-plug-2",
+          "g-pet-1",
+          "g-pur-1",
+          "g-muc-1"
+        ]
+      },
+      {
+        "text": "Too few platelets: a normal adult count starts at 150,000 per microliter, and below that is thrombocytopenia. Bleeding risk rises as the count falls. Mild drops (100,000 to 150,000) usually cause no symptoms. Very low counts, under about 10,000 to 20,000, can bleed with no injury at all.",
+        "claims": [
+          "c-pc-1",
+          "c-pc-2"
+        ]
+      },
+      {
+        "text": "Enough platelets, but too little to grip: in von Willebrand disease, the most common inherited bleeding disorder, there is too little or poorly working vWF. The platelet count is typically normal but adhesion is weak, so a normal count doesn't prove a plug can form.",
+        "claims": [
+          "c-vwd-1",
+          "c-pc-3"
+        ]
+      },
+      {
+        "text": "A missing receptor breaks one specific step. Without GPIb (Bernard-Soulier syndrome) platelets can't adhere properly. Without GPIIb/IIIa (Glanzmann thrombasthenia) they can't clump.",
+        "claims": [
+          "c-gpib-2",
+          "c-gp2-3"
+        ]
+      }
+    ],
+    "goal": "m1-g13"
+  },
+  {
+    "id": "m1-l10",
+    "module": 1,
+    "title": "The drugs that target this",
+    "problem": "A patient's med list says aspirin, Plavix, Effient, or Brilinta. Which step is blocked, and for how long?",
+    "nodes": [
+      "aspirin",
+      "cox1",
+      "clopidogrel",
+      "prasugrel",
+      "ticagrelor",
+      "p2y12"
+    ],
+    "paragraphs": [
+      {
+        "text": "Aspirin permanently (irreversibly) blocks COX-1, so platelets can't make thromboxane A2 and clump less.",
+        "claims": [
+          "c-asa-1"
+        ]
+      },
+      {
+        "text": "Remember that platelets have no nucleus. A platelet can't make new COX-1, so a blocked platelet stays blocked for the rest of its 7-to-10-day life. Aspirin's effect lasts about that long and fades only as new platelets replace the blocked ones.",
+        "claims": [
+          "c-plt-1",
+          "c-cox-2",
+          "c-asa-2"
+        ]
+      },
+      {
+        "text": "Clopidogrel (Plavix) and prasugrel (Effient) permanently block P2Y12, so ADP can't switch on GPIIb/IIIa. Like aspirin, each blocked platelet stays blocked for its whole 7-to-10-day life. Both drugs start as inactive prodrugs that the body must convert. After the last dose, function comes back gradually as new platelets are made: the clopidogrel label says generally in about 5 days, and prasugrel over about 5 to 9 days.",
+        "claims": [
+          "c-clop-1",
+          "c-clop-2",
+          "c-clop-3",
+          "c-pras-1"
+        ]
+      },
+      {
+        "text": "Ticagrelor (Brilinta) also blocks P2Y12, but reversibly. Reversible doesn't mean short: in the label's data, platelet blocking took about 5 days to return to no-drug levels.",
+        "claims": [
+          "c-tica-1"
+        ]
+      }
+    ],
+    "goal": "m1-g10"
+  }
+]
